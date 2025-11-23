@@ -1,0 +1,3097 @@
+[
+  {
+    "batch_meta": {
+      "batch_id": 41,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Usuarios reportan humo en el último vagón del tren detenido en Observatorio. Olor a quemado intenso y chispas visibles en el tercer riel. Sistema de evacuación activado. No circula tren a la terminal. Temperatura 9°C con niebla. Tráfico ligero en Av. Jalisco. Bomberos en camino.",
+      "features_numericas_promedio": {
+        "temp": 9.5,
+        "humidity": 88,
+        "precip_mm": 0,
+        "traffic_jam_level": 1
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 41,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Tacubaya presenta saturación extrema por lluvia nocturna. Usuarios esperan 25 minutos por trenes que avanzan a paso de tortuga. Agua filtrada en andenes y escaleras mojadas. Temperatura 11°C, precipitación 6mm. Tráfico pesado nivel 4 en Parque Lira por encharcamientos. Operativo Lluvia activo.",
+      "features_numericas_promedio": {
+        "temp": 11.0,
+        "humidity": 94,
+        "precip_mm": 6.0,
+        "traffic_jam_level": 4
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 42,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Juanacatlán opera con normalidad. Afluencia baja matutina. Servicio fluido sin reportes. Temperatura 8°C, cielo despejado. Tráfico nivel 1 en Av. Santa María. Mantenimiento preventivo programado sin afectaciones.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 76,
+        "precip_mm": 0,
+        "traffic_jam_level": 1
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 42,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "En Chapultepec se reporta empujones severos y largas filas antes de la apertura. Reja no abre a tiempo. Usuarios quejándose de frío en fila. Temperatura 7°C. Tráfico ligero en Av. Chapultepec. Calidad del aire buena",
+      "features_numericas_promedio": {
+        "temp": 7.5,
+        "humidity": 82,
+        "precip_mm": 0,
+        "traffic_jam_level": 2
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 43,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "Sevilla presenta tren detenido por defecto en puertas eléctricas. Las puertas no cierran correctamente en 3 vagones. Usuarios trasladados. Temperatura 13°C. Tráfico nivel 2 en Paseo de la Reforma. En Técnico se reporta componente defectuoso en motor de puerta.",
+      "features_numericas_promedio": {
+        "temp": 13.0,
+        "humidity": 68,
+        "precip_mm": 0,
+        "traffic_jam_level": 2
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Defecto de fabricación"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 43,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Insurgentes experimenta saturación extrema con filas que alcanzan la calle. Trenes cada 3 minutos pero insuficientes. Escaleras mecánicas detenidas. Temperatura 14°C. Tráfico nivel 5 en Av. Insurgentes Sur por accidente. Evento de concierto en WTC aumenta flujo.",
+      "features_numericas_promedio": {
+        "temp": 14.0,
+        "humidity": 65,
+        "precip_mm": 0,
+        "traffic_jam_level": 5
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Sobrecarga operacional"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 44,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "En Cuauhtémoc se reporta retrasos por falla en sistema de señalización. Pantallas de destino apagadas. Megafonía sin funcionar. Usuarios confundidos. Temperatura 16°C, soleado. Tráfico nivel 3 en Av. Chapultepec. Técnicos reiniciando sistema de control.",
+      "features_numericas_promedio": {
+        "temp": 16.0,
+        "humidity": 55,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 44,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "Balderas opera normal con afluencia alta pero controlada. Servicio regular sin incidentes. Temperatura 15°C. Tráfico nivel 3 en Eje Central. Mantenimiento programado de escaleras sin afectar operación.",
+      "features_numericas_promedio": {
+        "temp": 15.5,
+        "humidity": 58,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 45,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "Salto del Agua presenta tren detenido por interferencia de objeto metálico en vías. Herramienta de mantenimiento olvidada en línea. Tren evacuado. Temperatura 18°C. Tráfico ligero. Personal recupera objeto con 15 minutos de retraso.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 52,
+        "precip_mm": 0,
+        "traffic_jam_level": 2
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 45,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Isabel La Católica",
+      "resumen_para_roberta": "En Isabel La Católica se reporta chispas y ruido metálico en frenos del tren. Desgaste severo en pastillas. Usuarios alertan olor a quemado. Temperatura 17°C. Tráfico nivel 3 en Eje 1 Norte. En Técnico se reporta cambio inmediato de componentes requerido.",
+      "features_numericas_promedio": {
+        "temp": 17.0,
+        "humidity": 54,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 46,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Pino Suárez presenta falla de software en sistema de voceo y pantallas. Mensajes errónicos de destino. Usuarios confundidos. Temperatura 20°C, soleado. Tráfico nivel 2 en Eje 1 Oriente. Reinicio de sistema en curso.",
+      "features_numericas_promedio": {
+        "temp": 20.0,
+        "humidity": 48,
+        "precip_mm": 0,
+        "traffic_jam_level": 2
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 46,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Merced opera con saturación por evento en Centro Histórico. Afluencia muy alta pero servicio regular. Temperatura 21°C. Tráfico nivel 4 en Eje 1 Oriente. Operativo de seguridad preventivo en curso.",
+      "features_numericas_promedio": {
+        "temp": 21.0,
+        "humidity": 45,
+        "precip_mm": 0,
+        "traffic_jam_level": 4
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 47,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Candelaria",
+      "resumen_para_roberta": "En Candelaria se reporta humo en andén por cortocircuito en cableado. Evacuación ordenada. Olor a quemado intenso. Temperatura 23°C. Tráfico nivel 3 en Eje 3 Oriente. Bomberos controlan incendio pequeño en conexión eléctrica.",
+      "features_numericas_promedio": {
+        "temp": 23.0,
+        "humidity": 42,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 47,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "San Lázaro presenta grieta en pilar de concreto con desprendimiento de material. Usuarios reportan ruidos alarmantes. Temperatura 22°C. Tráfico nivel 3 en FIco. Mantenimiento estructural evalúa severidad.",
+      "features_numericas_promedio": {
+        "temp": 22.0,
+        "humidity": 44,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 48,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Moctezuma opera normal. Afluencia moderada sin incidentes. Temperatura 24°C. Tráfico nivel 3 en Av. Moctezuma. Mantenimiento preventivo de torniquetes sin afectar servicio.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 40,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 48,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "Balbuena presenta tren detenido por error de mantenimiento. Rieles mal nivelados tras trabajo nocturno generan fuertes sacudidas. Temperatura 25°C. Tráfico nivel 2 en Av. del Taller. Equipos corregirán nivelación tras cierre de servicio.",
+      "features_numericas_promedio": {
+        "temp": 25.0,
+        "humidity": 38,
+        "precip_mm": 0,
+        "traffic_jam_level": 2
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 49,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Blvd Puerto Aéreo",
+      "resumen_para_roberta": "En Blvd Puerto Aéreo se reporta tren detenido por falla mecánica en sistema de puertas. Bisel roto en 4 puertas. Usuarios reubicados. Temperatura 26°C. Tráfico nivel 3 en Viaducto. Repuesto en camino.",
+      "features_numericas_promedio": {
+        "temp": 26.0,
+        "humidity": 35,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 49,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "Gómez Farías opera con normalidad. Afluencia controlada. Servicio regular. Temperatura 27°C. Tráfico nivel 2 en Eje 1 Norte. Mantenimiento de luminarias en pausa por horario pico.",
+      "features_numericas_promedio": {
+        "temp": 27.0,
+        "humidity": 33,
+        "precip_mm": 0,
+        "traffic_jam_level": 2
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 50,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "Zaragoza presenta tren detenido por interferencia de persona caminando en vías. Operación paralizada 20 minutos. Temperatura 28°C. Tráfico nivel 4 en Calzada Zaragoza. Policía retira a individuo.",
+      "features_numericas_promedio": {
+        "temp": 28.0,
+        "humidity": 32,
+        "precip_mm": 0,
+        "traffic_jam_level": 4
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 50,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "Pantitlán presenta saturación crítica por evento en Foro Sol. Andenes imposibles de transitar. Trenes cada 2 minutos. Temperatura 28°C. Tráfico nivel 5 en Av. Río de los Remedios. Operativo especial de seguridad.",
+      "features_numericas_promedio": {
+        "temp": 28.0,
+        "humidity": 32,
+        "precip_mm": 0,
+        "traffic_jam_level": 5
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 51,
+      "timeframe": "15:00-16:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "En Observatorio se reporta tren detenido por falla de software. Pantallas negras y sistema de control colgado. Reinicio manual requiere 30 minutos. Temperatura 27°C. Tráfico nivel 3. Usuarios esperan instrucciones sin información.",
+      "features_numericas_promedio": {
+        "temp": 27.0,
+        "humidity": 34,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 51,
+      "timeframe": "15:00-16:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Tacubaya opera con normalidad. Afluencia moderada post-hora pico. Servicio regular. Temperatura 26°C. Tráfico nivel 3 en Parque Lira. Mantenimiento de catenaria programado para nocturno.",
+      "features_numericas_promedio": {
+        "temp": 26.5,
+        "humidity": 36,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 52,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Insurgentes presenta humo en andén por falla electrónica en cableado de alta tensión. Evacuación parcial. Olor nauseabundo. Temperatura 25°C. Tráfico nivel 4 en Av. Insurgentes. Bomberos controlan corto circuito en subestación.",
+      "features_numericas_promedio": {
+        "temp": 25.0,
+        "humidity": 38,
+        "precip_mm": 0,
+        "traffic_jam_level": 4
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 52,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "En Cuauhtémoc se reporta tren detenido por desgaste severo en ruedas de tracción. Ruido metálico y vibraciones. Usuarios trasladados. Temperatura 24°C. Tráfico nivel 3. Mantenimiento evalúa remachado de ruedas.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 40,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 53,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "Balderas presenta error de mantenimiento. Trabajo de limpieza con productos químicos dejó piso resbaloso. Tres usuarios caídos. Temperatura 23°C. Tráfico nivel 3. Equipos corrigen problema de limpieza.",
+      "features_numericas_promedio": {
+        "temp": 23.0,
+        "humidity": 42,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 53,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "En Salto del Agua se reporta falla mecánica en sistema de frenos. Ruido de metal al pasar trenes. Velocidad reducida. Temperatura 22°C. Tráfico nivel 3. Mantenimiento inspeccionando mordazas de freno.",
+      "features_numericas_promedio": {
+        "temp": 22.0,
+        "humidity": 44,
+        "precip_mm": 0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 60,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "Usuarios reportan fuerte olor a quemado en andén. Se detecta humo proveniente de sistema de ventilación. Evacuación preventiva en curso. Temperatura 12°C. Tráfico ligero en Av. Chapultepec. Bomberos evalúan corto circuito en conexión principal."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 60,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "Sevilla opera normalmente con afluencia baja nocturna. Servicio fluido sin incidentes. Temperatura 13°C. Tráfico nivel 2 en Paseo de la Reforma. Mantenimiento de catenaria programado para las 02:00."
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 61,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Tren detenido por interferencia de objeto extraño en vías. Identificado como bolsa de plástico en catenaria. Operación paralizada 8 minutos. Temperatura 10°C. Tráfico ligero en Av. Santa María. Personal retira obstrucción."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 61,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "En Salto del Agua se reporta falla mecánica en escaleras eléctricas. Piñón roto deja 2 escalas fuera de servicio. Temperatura 11°C. Tráfico nulo. Mantenimiento nocturno evalúa reparación extendida."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 62,
+      "timeframe": "02:00-03:00"
+    },
+    "X_features": {
+      "station": "Isabel La Católica",
+      "resumen_para_roberta": "Isabel La Católica presenta desgaste severo en rieles con chispas constantes. Usuarios reportan ruido alarmante. Temperatura 9°C. Tráfico nivel 1. Mantenimiento programado con 3 meses de retraso por falta de presupuesto."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 62,
+      "timeframe": "02:00-03:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Pino Suárez opera normal con afluencia mínima nocturna. Servicio fluido. Temperatura 9°C. Tráfico ligero en Eje 1 Oriente. Sistema de voceo en mantenimiento programado sin afectar operación."
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 63,
+      "timeframe": "03:00-04:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "En Merced se reporta tren detenido por falla de software en sistema de tracción. Pantallas de error reiniciando constantemente. Temperatura 8°C. Tráfico nulo. Técnico realiza reinicio manual de sistema."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 63,
+      "timeframe": "03:00-04:00"
+    },
+    "X_features": {
+      "station": "Candelaria",
+      "resumen_para_roberta": "Candelaria presenta interferencia de rata en vías. Detención 5 minutos. Animal retirado por personal. Temperatura 7°C. Tráfico ligero en Eje 3 Oriente. No daños reportados."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 64,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "En San Lázaro se reporta saturación por evento en Palacio de los Deportes. Usuarios describen 'mar de gente' y esperan 12 minutos. Temperatura 10°C. Tráfico pesado nivel 5 en FICO. Operativo especial de seguridad activo."
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 64,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Moctezuma presenta error de mantenimiento. Trabajo de limpieza de drenaje obstruye pasillo sin señalización. Usuarios tropezando. Temperatura 9°C. Tráfico nivel 2. Supervisor ordena retirar obstrucción."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 65,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "Balbuena opera normalmente. Afluencia baja matutina. Servicio fluido. Temperatura 8°C, niebla ligera. Tráfico nivel 2 en Av. del Taller. Mantenimiento preventivo de catenaria programado."
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 65,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "En Gómez Farías se reporta falla eléctrica con variación de voltaje que daña subestación. Luces parpadeantes y pérdida parcial de tracción. Temperatura 8°C. Tráfico ligero. Equipos de energía evaluando daño."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 66,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "Zaragoza presenta defecto de fabricación en sistema de puertas nuevas. 6 puertas no abren automáticamente. Tren fuera de servicio. Temperatura 10°C. Tráfico nivel 2. Proveedor envía técnicos bajo garantía."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Defecto de fabricación"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 66,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "Pantitlán experimenta saturación extrema por salida de evento masivo. Andenes imposibles de transitar. Trenes cada 2 minutos insuficientes. Temperatura 11°C. Tráfico nivel 5 en Av. Río de los Remedios. Sistema operando al 200% capacidad."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Sobrecarga operacional"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 67,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Observatorio opera normal. Afluencia moderada matutina. Servicio fluido sin retrasos. Temperatura 12°C, cielo despejado. Tráfico nivel 3 en Av. Jalisco. Mantenimiento preventivo sin afectaciones."
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 67,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "En Tacubaya se reporta sobrecarga operacional crítica. Sistema colapsado con usuarios que no pueden abordar. Trenes detenidos por exceso de carga en puertas. Temperatura 14°C. Tráfico nivel 5 en Parque Lira. Evento corporativo genera flujo inesperado."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Sobrecarga operacional"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 68,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Juanacatlán presenta falla electrónica en sistema de validación de tarjetas. Torniquetes bloqueados. Colas de 30 minutos. Temperatura 16°C. Tráfico ligero. Técnicos reparando módulos de lectura."
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 68,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "Sevilla opera normal con afluencia moderada. Servicio regular sin incidentes. Temperatura 16°C, soleado. Tráfico nivel 2 en Paseo de la Reforma. Mantenimiento de catenaria programado para nocturno."
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+
+  {
+    "batch_meta": {
+      "batch_id": 25,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Usuarios reportan en Observatorio la detención de un tren con olor a quemado y humo saliendo del pantógrafo, provocando evacuación controlada. La noche registra neblina densa con visibilidad reducida a 300m, temperatura de 11°C y humedad del 92%. Personal técnico inspecciona la catenaria entre Observatorio y Tacubaya. Tráfico en Av. Constituyentes nivel 2. En Estación Ecobici se reporta 0 bicicletas disponibles.",
+      "features_numericas_promedio": {
+        "temp": 11.0,
+        "humidity": 92.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 26,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Tacubaya presenta saturación severa por salida del Estadio Azul con música en vivo. Usuarios describeen 'estampida humana' en transbordo a Línea 7. Se activa palanca de emergencia por persona descompensada. Lluvia intensa de 8mm acumulados provoca filtraciones en el techo del pasillo de correspondencia. Temperatura 14°C, humedad 88%. Tráfico en Parque Lira nivel 5 por evento deportivo. Calidad de aire 'No saludable' por PM10.",
+      "features_numericas_promedio": {
+        "temp": 14.0,
+        "humidity": 88.0,
+        "precip_mm": 8.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Sobrecarga operacional"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 27,
+      "timeframe": "02:00-03:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "En Estación Juanacatlán se reporta escalera eléctrica detenida por objetos atorados. Usuarios quejan de falta de iluminación en pasillo hacia Línea 3. Clima despejado, 16°C, humedad 75%. No hay eventos masivos. Tráfico en Viaducto nivel 1. Mantenimiento programado en amplificadores de señal. Personal limpia grafitis en andenes. Calidad de aire 'Buena'.",
+      "features_numericas_promedio": {
+        "temp": 16.0,
+        "humidity": 75.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 28,
+      "timeframe": "03:00-04:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "Chapultepec opera con afluencia media. Usuarios reportan olor a humedad persistente en túnel. Técnico revisa compresor de aire acondicionado en andén por reportes de calor excesivo. Temperatura 13°C externa pero 28°C en andén. Humedad 80%. Tráfico en circuito Alameda nivel 3. Evento cultural en Museo Tamayo de bajo impacto. Calidad de aire 'Moderate' por PM2.5. Mantenimiento de luminarias LED en progreso.",
+      "features_numericas_promedio": {
+        "temp": 13.0,
+        "humidity": 80.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 29,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "Sevilla presenta cierre parcial por mantenimiento de carriles de llegada. Usuario reporta 'explosión leve' en motor de tren al salir de estación. Humo blanco evacuado rápidamente. Temperatura fría 9°C, humedad 91%. Niebla leve. Tráfico en Paseo de la Reforma nivel 2. Operativo alcoholímetro en cercanías. Calidad de aire 'Buena'. Sistema de megafonía presenta distorsión de audio.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 91.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 30,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "En Insurgentes se reporta alarma de humo en taller cercano. Usuarios en andén superior perciben olor a quemado intenso. Bomberos verifican subestación. Temperatura 7°C, humedad 93%, niebla densa. Tráfico en Av. Insurgentes nivel 1. No hay eventos. Personal revisa aislamiento de cableado de alta tensión por humedad. Calidad de aire 'Moderate'. Estación opera con afluencia baja.",
+      "features_numericas_promedio": {
+        "temp": 7.0,
+        "humidity": 93.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 31,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Cuauhtémoc enfrenta caos matutino por marcha de seguridad activada tras reporte de agua en vías. Trenes avanzan a 5km/h. Usuarios esperan 25 minutos. Gran congestión por salida de corporativos en Reforma. Lluvia ligera 1mm, temperatura 8°C, humedad 87%. Tráfico en Av. Chapultepec nivel 4. Calidad de aire 'Dañina' por PM2.5. Paramédicos atienden usuaria con crisis de ansiedad. Escalera eléctrica inoperante por exceso de carga.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 87.0,
+        "precip_mm": 1.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 32,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "Balderas presenta bloqueo completo por manifestación de maestros frente a Palacio de Bellas Artes. Accesos dosificados. Usuarios reportan 'acorralamiento' en pasillos. Temperatura 12°C, humedad 82%. Sin precipitación. Tráfico en Eje Central nivel 5. Calidad de aire 'Moderate'. Sistema de voceo con interferencia. Personal de seguridad desaloja vagoneros agresivos. Mantenimiento preventivo en marcha sobre sistema de frenos.",
+      "features_numericas_promedio": {
+        "temp": 12.0,
+        "humidity": 82.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 33,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "Salto del Agua registra falla en sistema de señalización lumínica. Semáforo de andén permanece en rojo intermitente. En Técnico se reporta defecto en módulo de control. Temperatura 18°C, humedad 68%. Sin lluvia. Tráfico en Eje 1 Norte nivel 3. Calidad de aire 'Buena'. Usuarios confundidos por falta de indicación de llegada de trenes. Se implementa protocolo manual de aproximación.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 68.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 34,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Isabel la Católica",
+      "resumen_para_roberta": "Isabel la Católica opera con normalidad. Usuarios reportan olor a pintura fresca por trabajos nocturnos. Temperatura 21°C, humedad 65%. Cielo despejado. Tráfico en Fray Servando nivel 2. Evento cultural en Centro Histórico de medio impacto. Calidad de aire 'Moderate'. Mantenimiento de pintura en pasillos concluido. Se monitorea nivel de ruido en andén por quejas recientes.",
+      "features_numericas_promedio": {
+        "temp": 21.0,
+        "humidity": 65.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 35,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Pino Suárez presenta alarma técnica por sobrecarga de transformador. Temperatura interna de equipo 85°C. Usuarios no afectados directamente. Temperatura ambiente 24°C, humedad 58%. Sin precipitación. Tráfico en Eje 1 Sur nivel 3. Calidad de aire 'Insalubre' por ozono. Mantenimiento correctivo en progreso. Se restringe uso de escaleras eléctricas para preservar carga eléctrica.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 58.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 36,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Merced registra detención de tren por perro grande en vías dirección Pantitlán. Operador realiza maniobra de emergencia. Animal retirado por personal de seguridad. Temperatura 26°C, humedad 55%. Cielo parcialmente nublado. Tráfico en Congreso de la Unión nivel 4 por mercado sobre ruedas. Calidad de aire 'Moderate'. Trenes con retraso de 8 minutos. Usuarios reportan fuerte olor a mariscos en vagones proveniente del exterior.",
+      "features_numericas_promedio": {
+        "temp": 26.0,
+        "humidity": 55.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 37,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Candelaria",
+      "resumen_para_roberta": "Candelaria presenta error de software en sistema de información a bordo. Pantallas muestran 'Error 404' en lugar de próxima estación. Temperatura 28°C, humedad 52%. Sin lluvia. Tráfico en Eje 2 Oriente nivel 3. Calidad de aire 'Dañina' por PM10. Usuarios desorientados. Técnico realiza reboot de sistema. Se activa protocolo de anuncios manuales por megafonía. Falla atribuida a actualización nocturna defectuosa.",
+      "features_numericas_promedio": {
+        "temp": 28.0,
+        "humidity": 52.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 38,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "San Lázaro enfrenta saturación crítica por conexión con TAPO y salida de autobuses de fin de semana largo. Filas exceden 150 metros. Temperatura 27°C, humedad 54%. Tormenta eléctrica lejana con truenos. Tráfico en Circuito Interior nivel 5. Calidad de aire 'Moderate'. Usuarios reportan puertas de vagón con cerradura defectuosa que no cierran completamente. Personal realiza ajuste de seguros mecánicos con herramientas. Se implementa dosificación de acceso.",
+      "features_numericas_promedio": {
+        "temp": 27.0,
+        "humidity": 54.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+
+  {
+    "batch_meta": {
+      "batch_id": 60,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Usuarios en Observatorio reportan que el primer tren de la mañana arrancó con una fuerte sacudida y sonido metálico raspante. El operador detuvo la marcha en el túnel por precaución. En superficie, la Av. Constituyentes registra tráfico ligero y niebla densa con visibilidad de 200m. La temperatura es de 8°C con humedad del 94%. Personal técnico aborda revisiones en el tren afectado mientras los usuarios son trasladados a la siguiente unidad.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 94.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 61,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "La estación Tacubaya amanece con una elevada afluencia de usuarios que se quejan de un zumbido eléctrico constante en los andenes. Los usuarios también reportan luces parpadeantes en los vagones de la Línea 1. En el exterior, lluvia moderada de 3mm afecta el tráfico en Parque Lira, elevando el nivel de congestión a 4. La temperatura es de 12°C con humedad del 86%. Técnicos revisan la subestación eléctrica cercana.",
+      "features_numericas_promedio": {
+        "temp": 12.0,
+        "humidity": 86.0,
+        "precip_mm": 3.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 62,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Usuarios en Juanacatlán esperan más de 12 minutos cuando el tablero indica 3 minutos, generando frustración. Algunos reportan que los trenes pasan lentamente sin detenerse completamente. La mañana está despejada con 15°C y humedad del 72%. El tráfico en Viaducto es moderado. No hay eventos masivos reportados en la zona. La calidad del aire es buena con AQI de 45.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 72.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 63,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "En Chapultepec, usuarios reportan que una escalera eléctrica se detuvo abruptamente causando pequeños tropiezos. La megafonía anuncia mantenimiento programado. Afuera, la Av. Chapultepec tiene tráfico pesado nivel 4 por bacheo. La temperatura alcanza los 18°C con humedad del 68% y cielo parcialmente nublado. Se realiza inspección profunda de los mecanismos de la escalera.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 68.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 64,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "Usuarios en Sevilla reportan un fuerte olor a quemado proveniente de las vías que obligó a evacuar temporalmente un andén. Bomberos verifican sin encontrar fuego visible. La tarde está soleada con 24°C y humedad del 55%. No hay tráfico aéreo reportado. La calidad del aire es moderada. El servicio se restablece en 15 minutos con limitaciones de velocidad.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 55.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 65,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "La estación Insurgentes presenta saturación extrema por concierto en Auditorio Nacional. Los usuarios describen empujones y dificultad para respirar en el transbordo. La temperatura es de 22°C con humedad del 60%. Tráfico en Av. Insurgentes Sur es caótico nivel 5. Calidad del aire es insalubre por ozono. Se activa operativo de seguridad con policía montada.",
+      "features_numericas_promedio": {
+        "temp": 22.0,
+        "humidity": 60.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Sobrecarga operacional"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 66,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "En Cuauhtémoc, personal detecta una fuga de agua en el techo del pasillo de transbordo que forma un charco de 2 metros de diámetro. Usuarios reportan resbalones. La temperatura es de 20°C con humedad del 78% y lluvia ligera reciente de 1mm. Tráfico en Av. Chapultepec es moderado. La calidad del aire es mala por PM2.5. Se cierra parcialmente el pasillo para reparaciones.",
+      "features_numericas_promedio": {
+        "temp": 20.0,
+        "humidity": 78.0,
+        "precip_mm": 1.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 67,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "Usuarios en Balderas reportan que un tren de la Línea 1 se detuvo entre estaciones por 18 minutos con las luces apagadas, generando pánico y quejas de claustrofobia. La tarde está nublada con 21°C y humedad del 70%. No hay tráfico vehicular reportado. La calidad del aire es regular. El tren reanuda marcha sin explicación oficial inicial.",
+      "features_numericas_promedio": {
+        "temp": 21.0,
+        "humidity": 70.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 68,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "En Salto del Agua, usuarios reportan un impacto contra las puertas del tren cuando cerraron antes de tiempo, atrapando a varias personas. El personal responde rápidamente. La temperatura es de 23°C con humedad del 65% y tormenta eléctrica cercana. Tráfico en Eje 1 Norte es fluido. La calidad del aire es moderada. Se revisan los sensores de seguridad de las puertas.",
+      "features_numericas_promedio": {
+        "temp": 23.0,
+        "humidity": 65.0,
+        "precip_mm": 2.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 69,
+      "timeframe": "15:00-16:00"
+    },
+    "X_features": {
+      "station": "Isabel la Católica",
+      "resumen_para_roberta": "Isabel la Católica presenta una situación de sobrecarga operacional por manifestación que bloquea el acceso principal. Los usuarios deben usar entradas alternas con filas de 40 minutos. La temperatura es de 25°C con humedad del 58%. No hay precipitación. Tráfico en el Centro Histórico es nivel 5. Calidad del aire es insalubre. Se coordina con policía para desviar flujo.",
+      "features_numericas_promedio": {
+        "temp": 25.0,
+        "humidity": 58.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 70,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "En Pino Suárez, usuarios reportan que la escalera eléctrica de subida funciona a velocidad irregular, acelerando y frenando de forma brusca. La tarde está soleada con 26°C y humedad del 55%. Sin eventos externos. Tráfico en Eje 1 Sur es moderado. Calidad del aire es dañina por ozono. Se activa mantenimiento correctivo y se cierra la escalera.",
+      "features_numericas_promedio": {
+        "temp": 26.0,
+        "humidity": 55.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 71,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Merced reporta interferencia externa por incendio en tienda cercana que genera humo entrando a la estación. Usuarios son evacuados preventivamente. La temperatura es de 24°C con humedad del 62% y viento fuerte. Tráfico en Congreso de la Unión es nivel 4. Calidad del aire es muy mala por PM10. Bomberos controlan la situación externa.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 62.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Interferencia externa"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 72,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Candelaria",
+      "resumen_para_roberta": "Candelaria presenta una falla eléctrica que deja sin iluminación el andén de la Línea 4. Los usuarios usan linternas de sus celulares. La noche cae con 19°C y humedad del 75%. Lluvia persistente de 2mm. Tráfico en Eje 2 Oriente es moderado. Calidad del aire es regular. Se activan luces de emergencia y se trabaja en el cableado.",
+      "features_numericas_promedio": {
+        "temp": 19.0,
+        "humidity": 75.0,
+        "precip_mm": 2.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 73,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "En San Lázara, usuarios reportan un olor químico fuerte en el pasillo de transbordo que provoca malestar y tos. La estación高气密性密闭 pero el olor persiste. Temperatura de 18°C con humedad del 80%. Sin tráfico aéreo. Tráfico en Circuito Interior es nivel 3. Calidad del aire es mala. Se evacúa el área y se detecta fuga de limpiador industrial.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 80.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 74,
+      "timeframe": "20:00-21:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Moctezuma presenta saturación severa por evento deportivo en el Estadio Azul. Los usuarios describen el andén como 'imposible de transitar'. Hay empujones y una persona descompensada. La temperatura es de 17°C con humedad del 82%. Tráfico en Eje 3 Oriente es nivel 5. Calidad del aire es insalubre. Paramédicos atienden en el andén.",
+      "features_numericas_promedio": {
+        "temp": 17.0,
+        "humidity": 82.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Sobrecarga operacional"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 75,
+      "timeframe": "21:00-22:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "Balbuena reporta que un tren de la Línea 1 se detuvo por 20 minutos sin anuncios claros, con usuarios atrapados. Algunos forzaron las puertas de emergencia. La noche está fría con 15°C y humedad del 85%. Tráfico en Av. del Taller es ligero. Calidad del aire es regular. La operación se normaliza pero con quejas masivas.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 85.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 76,
+      "timeframe": "22:00-23:00"
+    },
+    "X_features": {
+      "station": "Boulevard Puerto Aéreo",
+      "resumen_para_roberta": "En Boulevard Puerto Aéreo, usuarios reportan fuertes vibraciones en el andén cada vez que pasa un tren. La estructura de la estación muestra grietas antiguas. Temperatura de 13°C con humedad del 88% y niebla. Tráfico en Viaducto Río de la Piedad es nivel 2. Calidad del aire es buena. Ingenieros inspectcionan cimientos por posible asentamiento.",
+      "features_numericas_promedio": {
+        "temp": 13.0,
+        "humidity": 88.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 77,
+      "timeframe": "23:00-00:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "Gómez Farías opera normalmente en horas de cierre. Los últimos usuarios reportan puertas de vagón que cierran con dificultad y ruido. La noche está nublada con 11°C y humedad del 90%. Sin tráfico aéreo. Tráfico en Eje 4 Sur es mínimo. Calidad del aire es regular. Personal técnico lubrica mecanismos de puertas durante el mantenimiento nocturno.",
+      "features_numericas_promedio": {
+        "temp": 11.0,
+        "humidity": 90.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+
+  {
+    "batch_meta": {
+      "batch_id": 78,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "Usuarios en Zaragoza se quejan de un zumbido eléctrico intenso y luces parpadeantes en el andén que les provoca mareos. El aire huele a ozono. En superficie, Calzada Ignacio Zaragoza tiene tráfico nivel 2 por niebla densa con visibilidad de 150m. La temperatura es de 9°C y humedad del 91%. Personal de mantenimiento revisa la subestación eléctrica de la estación.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 91.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 79,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "En Pantitlán, usuarios observan que el tablero de llegadas muestra tiempos negativos y luego se apaga completamente. La megafonía repite un mensaje distorsionado. Afuera, Circuito Interior tiene tráfico ligero nivel 1. La temperatura es de 10°C con humedad del 89%. No hay eventos masivos. Técnicos corren a la sala de servidores con laptops.",
+      "features_numericas_promedio": {
+        "temp": 10.0,
+        "humidity": 89.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 80,
+      "timeframe": "02:00-03:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios en Tacubaya reportan un tren que avanza a paso de tortuga por la curva, produciendo un chirrido metalico agudo que dura todo el trayecto. La estación huele a humedad por lluvias de la tarde. Temperatura de 11°C y humedad del 87%. Parque Lira tiene tráfico nivel 2. Calidad del aire es buena. Mecánicos revisan los ejes del tren con linternas.",
+      "features_numericas_promedio": {
+        "temp": 11.0,
+        "humidity": 87.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 81,
+      "timeframe": "03:00-04:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "En Balderas, usuarios se quejan de que la escalera eléctrica de bajada se detiene cada 30 segundos y vuelve a arrancar bruscamente, causando tropiezos. La noche está fría con 8°C y humedad del 93%. Eje Central tiene tráfico ligero. Calidad del aire es moderada. Personal de mantenimiento cierra la escalera para revisar el motor.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 93.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 82,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Usuarios en Juanacatlán observan que el tren frena bruscamente antes de la señal de detención, luego avanza unos metros y vuelve a frenar. El movimiento es repetitivo y nervioso. Temperatura de 7°C con humedad del 94% y niebla leve. Viaducto tiene tráfico nivel 1. Calidad del aire es buena. Operador reporta anomalía en el sistema automático de manejo.",
+      "features_numericas_promedio": {
+        "temp": 7.0,
+        "humidity": 94.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 83,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "En Insurgentes, usuarios reportan humo blanco saliendo de las rejillas de ventilación del túnel que huele a goma quemada. La mañana está fresca con 9°C y humedad del 90%. No hay tráfico aéreo. Av. Insurgentes Sur tiene tráfico ligero. Calidad del aire es moderada. Bomberos y técnicos revisan el tren sin encontrar fuego visible.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 90.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 84,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "Usuarios en Salto del Agua se quejan de que las puertas del tren abren con el tren aún en movimiento, lo que genera pánico. La afluencia matutina es moderada. Temperatura de 10°C con humedad del 88% y cielo despejado. Eje 1 Norte tiene tráfico nivel 3. Calidad del aire es insalubre. Operador detiene el servicio y se revisan los sensores de velocidad.",
+      "features_numericas_promedio": {
+        "temp": 10.0,
+        "humidity": 88.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 85,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "En Cuauhtémoc, usuarios observan a técnicos con equipos de soldadura trabajando en las vías durante el servicio, provocando chispas visibles y detenciones cortas. La mañana está nublada con 12°C y humedad del 85%. Av. Chapultepec tiene tráfico nivel 4. Calidad del aire es moderada. El trabajo genera retrasos de 5 minutos por seguridad.",
+      "features_numericas_promedio": {
+        "temp": 12.0,
+        "humidity": 85.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 86,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "Usuarios en Chapultepec reportan que el sistema de información en pantallas muestra anuncios de estaciones que no corresponden a la ruta actual. La mañana está soleada con 16°C y humedad del 70%. Circuito Interior tiene tráfico nivel 3. Calidad del aire es dañina por ozono. Técnicos de sistemas apagan y reinician los paneles.",
+      "features_numericas_promedio": {
+        "temp": 16.0,
+        "humidity": 70.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 87,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "En Sevilla, usuarios observan que un tren nuevo de la flota reciente tiene ventanas con defecto de fábrica que no cierran herméticamente, dejando entrar ruido del túnel. Temperatura de 18°C con humedad del 68%. Cielo parcialmente nublado. Paseo de la Reforma tiene tráfico nivel 2. Calidad del aire es buena. El tren es retirado para ajustes.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 68.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Defecto de fabricación"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 88,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "En Gómez Farías, usuarios se quejan de un tren que emite un pitido electrónico constante y alto que no para, causando malestar auditivo. Usuarios se taparon los oídos. La mañana está fresca con 19°C y humedad del 65%. Eje 4 Sur tiene tráfico nivel 3. Calidad del aire es moderada. Operador silencia la alarma defectuosa y cambia de tren.",
+      "features_numericas_promedio": {
+        "temp": 19.0,
+        "humidity": 65.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 89,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Isabel la Católica",
+      "resumen_para_roberta": "Usuarios en Isabel la Católica reportan que el tren se detiene en seco entre estaciones sin razón aparente, luego espera 3 minutos y avanza. El patrón se repite. La afluencia es media. Temperatura de 21°C con humedad del 62% y cielo despejado. Fray Servando tiene tráfico nivel 2. Calidad del aire es insalubre. Técnicos revisan el sistema de señalización en el túnel.",
+      "features_numericas_promedio": {
+        "temp": 21.0,
+        "humidity": 62.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 90,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "En Pino Suárez, usuarios observan humo denso saliendo de una de las juntas de la vía que huele a lubricante quemado. Servicio se suspende temporalmente. La tarde está soleada con 24°C y humedad del 58%. Eje 1 Sur tiene tráfico nivel 4. Calidad del aire es mala por PM10. Bomberos verifican y encuentran material lubricante sobre caliente, no fuego.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 58.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 91,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Usuarios en Merced se quejan de que el tren de la mañana no alcanza la velocidad normal, avanzando muy despacio y con sacudidas. Algunos usuarios perdieron el trasbordo. Temperatura de 23°C con humedad del 60%. Lluvia ligera de 1mm reciente. Congreso de la Unión tiene tráfico nivel 3. Calidad del aire es moderada. Mecánicos revisan el motor de tracción en el taller.",
+      "features_numericas_promedio": {
+        "temp": 23.0,
+        "humidity": 60.0,
+        "precip_mm": 1.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 92,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Candelaria",
+      "resumen_para_roberta": "En Candelaria, usuarios reportan que el sistema de ventilación no funciona, generando una sensación de sofoco en el andén. Afuera hay una tormenta eléctrica con 8mm de precipitación. Temperatura de 22°C con humedad del 78%. Eje 2 Oriente tiene tráfico nivel 4. Calidad del aire es mala. Técnicos revisan los ventiladores del túnel, que están apagados por sobrecarga.",
+      "features_numericas_promedio": {
+        "temp": 22.0,
+        "humidity": 78.0,
+        "precip_mm": 8.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 93,
+      "timeframe": "15:00-16:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "Usuarios en San Lázaro observan que una puerta de emergencia del andén está forzada y abierta, con la alarma silenciada. Reportan falta de seguridad. La tarde está nublada con 21°C y humedad del 68%. Circuito Interior tiene tráfico nivel 3. Calidad del aire es moderada. Personal de seguridad cierra la puerta y revisa el sistema de alarmas.",
+      "features_numericas_promedio": {
+        "temp": 21.0,
+        "humidity": 68.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 94,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "En Moctezuma, usuarios se quejan de que el tren hace un ruido de 'martilleo' constante que aumenta con la velocidad. Algunos se cambian de vagón. Temperatura de 20°C con humedad del 70% y cielo despejado. Eje 3 Oriente tiene tráfico nivel 4. Calidad del aire es insalubre. Mecánicos identifican un cojinete defectuoso en el eje del tren.",
+      "features_numericas_promedio": {
+        "temp": 20.0,
+        "humidity": 70.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 95,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "Usuarios en Balbuena reportan que el tren se detiene justo antes de la señal de entrada a la estación, retrocede unos centímetros, y luego avanza. El movimiento se repite varias veces. Temperatura de 19°C con humedad del 72%. Av. del Taller tiene tráfico nivel 3. Calidad del aire es moderada. Operadores reportan error en el sistema de punto de parada automático.",
+      "features_numericas_promedio": {
+        "temp": 19.0,
+        "humidity": 72.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 96,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Boulevard Puerto Aéreo",
+      "resumen_para_roberta": "En Boulevard Puerto Aéreo, usuarios observan a personal con equipo de protección revisando un contenedor de herramientas olvidado cerca de las vías. El servicio se detiene preventivamente. La noche cae con 17°C y humedad del 75%. Viaducto Río de la Piedad tiene tráfico nivel 2. Calidad del aire es buena. El contenedor es retirado sin incidentes.",
+      "features_numericas_promedio": {
+        "temp": 17.0,
+        "humidity": 75.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 97,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "Usuarios en Gómez Farías reportan que la estación está completamente a oscuras por apagón total, excepto por luces de emergencia. La noche es nublada con 16°C y humedad del 78%. Eje 4 Sur tiene tráfico nivel 2. Calidad del aire es moderada. Personal confirma falla en el transformador principal. Suministro eléctrico se restablece en 10 minutos.",
+      "features_numericas_promedio": {
+        "temp": 16.0,
+        "humidity": 78.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 98,
+      "timeframe": "20:00-21:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "En Zaragoza, usuarios se quejan de un olor químico fuerte en el andén que provoca tos y ardura en ojos. La estación es evacuada. Temperatura de 15°C con humedad del 80%. Calzada Ignacio Zaragoza tiene tráfico nivel 3. Calidad del aire es mala. Se detecta derrame de líquido de limpieza industrial.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 80.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 99,
+      "timeframe": "21:00-22:00"
+    },
+    "X_features": {
+      "station": "Santa Anita",
+      "resumen_para_roberta": "Usuarios en Santa Anita reportan que el tren avanza con bamboleo excesivo, tironeos laterales en las curvas. Algunos usuarios se marean. La noche está tranquila con 14°C y humedad del 82%. Eje 8 Sur tiene tráfico nivel 2. Calidad del aire es buena. Mecánicos revisan el sistema de suspensión del tren.",
+      "features_numericas_promedio": {
+        "temp": 14.0,
+        "humidity": 82.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 100,
+      "timeframe": "22:00-23:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "En Juanacatlán, usuarios observan chispas azules en la catenaria cuando el tren pasa, acompañado de un chasquido audible. Lluvia ligera de 1mm. Temperatura de 13°C con humedad del 84%. Viaducto tiene tráfico nivel 1. Calidad del aire es moderada. Trenes se detienen preventivamente. Técnicos encuentran desgaste en el colector de corriente.",
+      "features_numericas_promedio": {
+        "temp": 13.0,
+        "humidity": 84.0,
+        "precip_mm": 1.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 101,
+      "timeframe": "23:00-00:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "En Pantitlán, usuarios reportan que el último tren tiene todas las luces internas apagadas, operando solo con luz de emergencia. La estación está prácticamente vacía. Temperatura de 12°C con humedad del 85% y cielo nublado. Circuito Interior tiene tráfico mínimo. Calidad del aire es buena. Operador reporta falla en el alternador del tren.",
+      "features_numericas_promedio": {
+        "temp": 12.0,
+        "humidity": 85.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 102,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Usuarios en Moctezuma escuchan un golpe seco en el techo del vagón cuando el tren sale de la estación, seguido de un sonido de arrastre metálico. La noche está fría con 8°C, humedad del 91% y niebla densa. Eje 3 Oriente tiene tráfico nivel 1. Calidad del aire es buena. El tren es detenido en el siguiente andén para inspección.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 91.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 103,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "En Balbuena, usuarios reportan que las pantallas de información muestran solo la hora actual en lugar de los tiempos de llegada. Todos los destinos dicen '00:00'. Temperatura de 9°C con humedad del 89% y cielo claro. Av. del Taller tiene tráfico ligero. Calidad del aire es moderada. Técnicos en sala de control reportan error de sincronización de servidor.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 89.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 104,
+      "timeframe": "02:00-03:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "Usuarios en Pantitlán observan que el andén de la Línea 9 está inundado con agua que gotera del techo, formando charcos de 5cm. No hay lluvia externa. Temperatura de 10°C con humedad del 88%. Circuito Interior tiene tráfico nivel 2. Calidad del aire es buena. Mantenimiento revisa tuberías rotas de agua de limpieza.",
+      "features_numericas_promedio": {
+        "temp": 10.0,
+        "humidity": 88.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 105,
+      "timeframe": "03:00-04:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "En Zaragoza, usuarios reportan que el tren frene de emergencia sin razón visible, lanzando a todos hacia adelante. Después de 10 minutos, avanza normalmente. Temperatura de 7°C con humedad del 92% y niebla. Calzada Ignacio Zaragoza tiene tráfico nivel 1. Calidad del aire es moderada. Operador reporta activación involuntaria de freno por error de sensor.",
+      "features_numericas_promedio": {
+        "temp": 7.0,
+        "humidity": 92.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 106,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Santa Anita",
+      "resumen_para_roberta": "Usuarios en Santa Anita se quejan de un zumbido eléctrico en los torniquetes que causa que algunos no abran, atrancando la entrada. Temperatura de 6°C con humedad del 93% y cielo despejado. Eje 8 Sur tiene tráfico ligero. Calidad del aire es buena. Técnicos desconectan y revisan el circuito de los torniquetes.",
+      "features_numericas_promedio": {
+        "temp": 6.0,
+        "humidity": 93.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 107,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "En Salto del Agua, usuarios reportan que el tren avanza a velocidad muy reducida por el túnel, con el operador usando el claxon repetidamente. La afluencia es media. Temperatura de 8°C con humedad del 90% y niebla leve. Eje 1 Norte tiene tráfico nivel 2. Calidad del aire es moderada. Operador reporta obstáculo detectado por sensor que no se identifica visualmente.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 90.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 108,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Usuarios en Juanacatlán observan que el andén está lleno de polvo de concreto que cae del techo, ensuciando ropa. Hay mallas colgando. Temperatura de 9°C con humedad del 88% y lluvia ligera 0.5mm. Viaducto tiene tráfico nivel 3. Calidad del aire es dañina por PM10. Mantenimiento revisa desprendimiento de revestimiento del túnel.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 88.0,
+        "precip_mm": 0.5,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 109,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "En Gómez Farías, usuarios reportan que las puertas del tren abren y cierran tres veces seguidas antes de partir, generando confusión. La afluencia es alta. Temperatura de 11°C con humedad del 86% y cielo despejado. Eje 4 Sur tiene tráfico nivel 4. Calidad del aire es moderada. Operador reporta error en protocolo de cierre de puertas.",
+      "features_numericas_promedio": {
+        "temp": 11.0,
+        "humidity": 86.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 110,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Beholla",
+      "resumen_para_roberta": "Usuarios en Balderas reportan que el andén huele fuerte a gasolina o solvente, causando molestia. La ventilación no lo extrae. Temperatura de 13°C con humedad del 84% y niebla. Eje Central tiene tráfico nivel 5 por manifestación. Calidad del aire es mala. Se detecta derrame de combustible de moto de mantenimiento en túnel. Área evacuada.",
+      "features_numericas_promedio": {
+        "temp": 13.0,
+        "humidity": 84.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 111,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "En Chapultepec, usuarios observan que el tren tiene una ventana lateral con grieta radiante que parece crecer durante el viaje. Genera preocupación. Temperatura de 16°C con humedad del 75% y cielo parcialmente nublado. Circuito Exterior tiene tráfico nivel 3. Calidad del aire es moderada. El tren es retirado en la siguiente estación por seguridad.",
+      "features_numericas_promedio": {
+        "temp": 16.0,
+        "humidity": 75.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 112,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "Usuarios en Sevilla reportan que la megafonía anuncia 'próxima estación: Universidad' (que está en Línea 3) estando en Línea 1. La confusión es general. Temperatura de 18°C con humedad del 72% y sol. Paseo de la Reforma tiene tráfico nivel 2. Calidad del aire es dañina por ozono. Técnico reinicia el módulo de audio del tren.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 72.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 113,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "En Gómez Farías, usuarios se quejan de un zumbido constante en los altavoces del andén, incluso sin anuncios. El ruido es agudo y molesto. Temperatura de 19°C con humedad del 70% y cielo despejado. Eje 4 Sur tiene tráfico nivel 3. Calidad del aire es moderada. Técnicos desconectan el sistema de audio para evitar daño a los altavoces.",
+      "features_numericas_promedio": {
+        "temp": 19.0,
+        "humidity": 70.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 114,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "Usuarios en Zaragoza observan que el tren tiene un foco LED que parpadea con ritmo rápido, causando molestia visual. Algunos cerraron los ojos. Temperatura de 21°C con humedad del 68% y lluvia ligera 0.5mm. Calzada Ignacio Zaragoza tiene tráfico nivel 4. Calidad del aire es insalubre. El foco es reemplazado en la siguiente estación.",
+      "features_numericas_promedio": {
+        "temp": 21.0,
+        "humidity": 68.0,
+        "precip_mm": 0.5,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "target_falla": null
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 115,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "En Pantitlán, usuarios reportan que un tren de carga nocturno pasó por la estación a velocidad excesiva, causando vibraciones fuertes en el andén. Temperatura de 20°C con humedad del 65% y cielo parcialmente nublado. Circuito Interior tiene tráfico nivel 3. Calidad del aire es moderada. Operador del tren de carga es llamado a revisión.",
+      "features_numericas_promedio": {
+        "temp": 20.0,
+        "humidity": 65.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 116,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios en Tacubaya se quejan de que la escalera eléctrica de subida a Línea 7 está funcionando demasiado lenta, casi a mitad de velocidad. Genera aglomeración. Temperatura de 22°C con humedad del 62% y tormenta lejana. Parque Lira tiene tráfico nivel 4. Calidad del aire es mala. Mantenimiento revisa el motor y encuentra fuga de aceite.",
+      "features_numericas_promedio": {
+        "temp": 22.0,
+        "humidity": 62.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 117,
+      "timeframe": "15:00-16:00"
+    },
+    "X_features": {
+      "station": "Santa Anita",
+      "resumen_para_roberta": "En Santa Anita, usuarios reportan que un tren se detuvo en el túnel y apagó luces por 8 minutos, generando pánico y gritos. La evacuación no fue necesaria. Temperatura de 23°C con humedad del 60% y sol. Eje 8 Sur tiene tráfico nivel 3. Calidad del aire es moderada. Operador reporta falla en el sistema de tracción.",
+      "features_numericas_promedio": {
+        "temp": 23.0,
+        "humidity": 60.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 118,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Przeworski",
+      "resumen_para_roberta": "Usuarios en esta estación experimentan algo extraño: los anuncios de la megafonía suenan en un idioma que nadie reconoce, posiblemente japonés o coreano. La pantalla muestra caracteres extraños. La tarde está soleada con 24°C y humedad del 58%. No hay eventos especiales. El tráfico en la zona es moderado. La calidad del aire es regular. Los usuarios están confundidos y algunos graban videos.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 58.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 119,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "En Zaragoza, usuarios se quejan de que el piso del andén está tan caliente que queman las suelas de los zapatos. Se ven vapores levantándose. La tarde está muy calurosa con 32°C y humedad del 45%. No hay lluvia. El tráfico en Calzada Zaragoza es pesado nivel 4. La calidad del aire es muy mala por ozono. Personal revisa las tuberías de calefacción que pasan bajo el andén.",
+      "features_numericas_promedio": {
+        "temp": 32.0,
+        "humidity": 45.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 120,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "Usuarios en Pantitlán observan que un tren llegó con una de sus puertas laterales abiertas, aunque la estación no estaba saturada. Personas se asustan y se alejan. La noche cae con 19°C y humedad del 70%. No hay eventos externos. El tráfico en Circuito Interior es moderado nivel 3. La calidad del aire es regular. Operador reporta falla en el seguro de la puerta.",
+      "features_numericas_promedio": {
+        "temp": 19.0,
+        "humidity": 70.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 121,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "En Tacubaya, usuarios reportan que el agua de la lluvia entra por los extremos del andén, formando un río pequeño que fluye hacia las escaleras. La lluvia es intensa con 12mm acumulados. Temperatura de 17°C con humedad del 85%. Parque Lira tiene tráfico nivel 5 por inundaciones. La calidad del aire es mala. El sistema de drenaje está colapsado.",
+      "features_numericas_promedio": {
+        "temp": 17.0,
+        "humidity": 85.0,
+        "precip_mm": 12.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 122,
+      "timeframe": "20:00-21:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Usuarios en Moctezuma se quejan de que el tren hace un ruido de 'molienda' cada vez que acelera, como si algo estuviera rayando. La noche está fresca con 16°C y humedad del 75%. No hay lluvia. El tráfico en Eje 3 Oriente es ligero nivel 2. La calidad del aire es moderada. Mecánicos encuentran una pieña suelta en el sistema de tracción.",
+      "features_numericas_promedio": {
+        "temp": 16.0,
+        "humidity": 75.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 123,
+      "timeframe": "21:00-22:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "En Balderas, usuarios observan que el tren se detuvo justo en medio de la estación, con las puertas alineadas incorrectamente. El operador tuvo que moverse varias veces. Temperatura de 15°C con humedad del 78% y niebla. Eje Central tiene tráfico mínimo. Calidad del aire es buena. Operador reporta error de posicionamiento del tren.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 78.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 124,
+      "timeframe": "22:00-23:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Usuarios en Insurgentes se quejan de un olor dulce y químico en el pasillo de transbordo que provoca náuseas. La noche está nublada con 14°C y humedad del 82%. No hay tráfico externo reportado. La calidad del aire es regular. Se detecta fuga de refrigerante del sistema de aire acondicionado.",
+      "features_numericas_promedio": {
+        "temp": 14.0,
+        "humidity": 82.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 125,
+      "timeframe": "23:00-00:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "En Cuauhtémoc, usuarios reportan que el último tren de la noche tiene luces interiores que parpadean al ritmo de la marcha, como si hubiera una conexión suelta. La temperatura es de 12°C con humedad del 85% y cielo estrellado. Av. Chapultepec tiene tráfico mínimo. La calidad del aire es buena. Técnico aborda el problema en el taller nocturno.",
+      "features_numericas_promedio": {
+        "temp": 12.0,
+        "humidity": 85.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 126,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Usuarios en Observatorio se quejan de que el primer tren huele fuerte a humedad y moho, como si hubiera agua estancada debajo de los asientos. Afuera hay niebla densa con 7°C y humedad del 95%. Av. Constituyentes tiene tráfico nivel 1. La calidad del aire es buena. Personal de limpieza encuentra una fuga en el sistema de drenaje del vagón.",
+      "features_numericas_promedio": {
+        "temp": 7.0,
+        "humidity": 95.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 127,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "En Juanacatlán, usuarios reportan un tren con una puerta que no cierra herméticamente, dejando ver la luz del túnel y entrando ruido. El viaje es ruidoso. Temperatura de 8°C con humedad del 92% y cielo claro. Viaducto tiene tráfico nivel 2. Calidad del aire es moderada. El tren es retirado en Pantitlán.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 92.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 128,
+      "timeframe": "02:00-03:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "Usuarios en Chapultepec observan que el tablero de llegadas muestra '---' para todos los trenes durante 15 minutos. La megafonía no funciona. Temperatura de 9°C con humedad del 90% y niebla. Circuito Interior tiene tráfico nivel 1. Calidad del aire es buena. Técnicos reportan falla en la conexión de red del servidor local.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 90.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 129,
+      "timeframe": "03:00-04:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "En San Lázaro, usuarios se quejan de que la escalera eléctrica de subida emite un chirrido agudo al cambiar de velocidad. Varias personas se asustan y la evitan. Temperatura de 7°C con humedad del 93% y cielo despejado. Circuito Interior tiene tráfico ligero. Calidad del aire es moderada. Mantenimiento lubrica los engranajes pero la falla persiste.",
+      "features_numericas_promedio": {
+        "temp": 7.0,
+        "humidity": 93.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 130,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "Usuarios en Gómez Farías reportan que el tren frena tan bruscamente que las ruedas chirrian y dejan marcas negras en las vías. El golpe sacude a todos los pasajeros. Temperatura de 6°C con humedad del 94% y niebla. Eje 4 Sur tiene tráfico nivel 2. Calidad del aire es buena. Operador reporta prueba de freno de emergencia sin aviso.",
+      "features_numericas_promedio": {
+        "temp": 6.0,
+        "humidity": 94.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 131,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "En Observatorio, usuarios reportan que el andén está cubierto de una capa fina de polvo negro, ensuciando zapatos y mochilas. Huele a quemado. Temperatura de 7°C con humedad del 91% y cielo limpio. Constituyentes tiene tráfico nivel 1. Calidad del aire es moderada. Mantenimiento revisa los filtros de ventilación del túnel.",
+      "features_numericas_promedio": {
+        "temp": 7.0,
+        "humidity": 91.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 132,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios en Tacubaya se quejan de que el tren hace un sonido de 'vacío' cuando frena, como si no hubiera presión. Los frenos chirrían demasiado. Temperatura de 8°C con humedad del 89% y lluvia ligera 0.5mm. Parque Lira tiene tráfico nivel 3. Calidad del aire es dañina por PM2.5. Mecánicos revisan el sistema neumático del tren.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 89.0,
+        "precip_mm": 0.5,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 133,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "En San Lázaro, usuarios reportan que la puerta de emergencia del andén está bloqueada con cinta de seguridad, pero la alarma no suena. Temperatura de 9°C con humedad del 87% y niebla leve. Circuito Interior tiene tráfico nivel 2. Calidad del aire es moderada. Personal de seguridad reporta falla en el sistema de alarma.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 87.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 134,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Usuarios en Juanacatlán se quejan de que el tren está tan saturado que las puertas no pueden cerrar, se abren y cierran repetidamente. Hay empujones. Temperatura de 11°C con humedad del 85% y cielo despejado. Viaducto tiene tráfico nivel 4. Calidad del aire es mala. No hay eventos masivos. Es hora pico.",
+      "features_numericas_promedio": {
+        "temp": 11.0,
+        "humidity": 85.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Sobrecarga operacional"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 135,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "En Balderas, usuarios observan que un tren tiene una ventana con una película adhesiva que se está despegando, flotando dentro del vagón. Genera distracción. Temperatura de 13°C con humedad del 82% y sol. Eje Central tiene tráfico nivel 5 por manifestación. Calidad del aire es insalubre. El tren es retirado en la siguiente estación.",
+      "features_numericas_promedio": {
+        "temp": 13.0,
+        "humidity": 82.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 136,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Usuarios en Observatorio reportan que la megafonía anuncia 'atención, incendio en la estación' pero no hay fuego ni humo. Genera pánico. Temperatura de 15°C con humedad del 78% y cielo despejado. Constituyentes tiene tráfico nivel 2. Calidad del aire es buena. Operador reporta error en el panel de voz, activó mensaje equivocado.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 78.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 137,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "En Gómez Farías, usuarios se quejan de que el tren se detiene en cada estación por 2 minutos extra sin anuncio, acumulando retraso. Temperatura de 17°C con humedad del 75% y tormenta lejana. Eje 4 Sur tiene tráfico nivel 3. Calidad del aire es moderada. Operador reporta orden de 'marcha de seguridad' por lluvia en otras líneas.",
+      "features_numericas_promedio": {
+        "temp": 17.0,
+        "humidity": 75.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 138,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "Usuarios en Chapultepec reportan que el andén tiene un charco de aceite grueso cerca del borde, resbaladizo y con olor químico. Temperatura de 19°C con humedad del 72% y sol. Circuito Interior tiene tráfico nivel 4. Calidad del aire es dañina por ozono. Mantenimiento derramó aceite de escalera mecánica durante reparación.",
+      "features_numericas_promedio": {
+        "temp": 19.0,
+        "humidity": 72.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 139,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "En Zaragoza, usuarios observan que una nueva pantalla de información digital muestra solo colores arcoíris, sin datos. Está estática. Temperatura de 21°C con humedad del 68% y cielo parcialmente nublado. Calzada Zaragoza tiene tráfico nivel 5. Calidad del aire es insalubre. Técnico reporta defecto de fábrica en la pantalla LED.",
+      "features_numericas_promedio": {
+        "temp": 21.0,
+        "humidity": 68.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Defecto de fabricación"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 140,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Candelaria",
+      "resumen_para_roberta": "Usuarios en Candelaria se quejan de un sonido de 'llave inglesa' golpeando metal que viene del túnel durante 5 minutos, sin parar. Temperatura de 22°C con humedad del 65% y tormenta lejana. Eje 2 Oriente tiene tráfico nivel 3. Calidad del aire es moderada. Personal de mantenimiento trabajaba sin aviso en las vías.",
+      "features_numericas_promedio": {
+        "temp": 22.0,
+        "humidity": 65.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 141,
+      "timeframe": "15:00-16:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "En San Lázaro, usuarios reportan que el tren se detuvo entre estaciones por 12 minutos con las luces apagadas y nadie explica qué pasa. La gente usa linternas de celular. Temperatura de 23°C con humedad del 62% y sol. Circuito Interior tiene tráfico nivel 4. Calidad del aire es mala. Operador reporta falla total del sistema de tracción.",
+      "features_numericas_promedio": {
+        "temp": 23.0,
+        "humidity": 62.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 142,
+      "timeframe": "16:00-17:00"
+    },
+    "X_features": {
+      "station": "Pantitlán",
+      "resumen_para_roberta": "Usuarios en Pantitlán observan que el andén de la Línea 5 tiene una losa levantada de 2cm que hace tropezar a la gente. Está pintada de amarillo pero no hay señalización. Temperatura de 24°C con humedad del 58% y nubes. Circuito Interior tiene tráfico nivel 5. Calidad del aire es moderada. Mantenimiento reporta error en nivelación del andén.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 58.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 143,
+      "timeframe": "17:00-18:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "En Cuauhtémoc, usuarios se quejan de que el tren no frena al llegar a la estación, pasa de largo y tiene que retroceder. Pasajeros se asustan. Temperatura de 25°C con humedad del 55% y tormenta aproximándose. Av. Chapultepec tiene tráfico nivel 4. Calidad del aire es insalubre. Operador reporta falla en el sistema de frenado automático.",
+      "features_numericas_promedio": {
+        "temp": 25.0,
+        "humidity": 55.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 144,
+      "timeframe": "18:00-19:00"
+    },
+    "X_features": {
+      "station": "Santa Anita",
+      "resumen_para_roberta": "Usuarios en Santa Anita reportan que el andén huele a aguas negras y ven líquido café fluyendo por una ranura. El olor es insoportable. Temperatura de 22°C con humedad del 60% y lluvia 2mm. Eje 8 Sur tiene tráfico nivel 3. Calidad del aire es mala. Mantenimiento encuentra obstrucción en el drenaje de la estación.",
+      "features_numericas_promedio": {
+        "temp": 22.0,
+        "humidity": 60.0,
+        "precip_mm": 2.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Desgaste natural"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 145,
+      "timeframe": "19:00-20:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "En Zaragoza, usuarios observan que un tren nuevo tiene los asientos con el tapizado mal cosido, descubriendo espuma. Parece defecto de fábrica. Temperatura de 21°C con humedad del 62% y noche clara. Calzada Zaragoza tiene tráfico nivel 3. Calidad del aire es moderada. El tren es retirado para revisión de calidad.",
+      "features_numericas_promedio": {
+        "temp": 21.0,
+        "humidity": 62.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Defecto de fabricación"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 146,
+      "timeframe": "20:00-21:00"
+    },
+    "X_features": {
+      "station": "Candelaria",
+      "resumen_para_roberta": "Usuarios en Candelaria se quejan de que la megafonía repite el mismo anuncio cada 30 segundos, sin parar. Es muy molesto. Temperatura de 20°C con humedad del 65% y cielo nublado. Eje 2 Oriente tiene tráfico nivel 2. Calidad del aire es buena. Operador reporta botón de anuncio atascado.",
+      "features_numericas_promedio": {
+        "temp": 20.0,
+        "humidity": 65.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error humano"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 147,
+      "timeframe": "00:00-01:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Usuarios en Juanacatlán reportan un zumbido eléctrico tan fuerte en el andén que les duele la cabeza. El sonido parece venir de debajo de las vías. La noche está fría con 6°C, humedad del 94% y niebla densa. Viaducto tiene tráfico nivel 1. Calidad del aire es buena. Técnicos desconectan un transformador en sobrecarga.",
+      "features_numericas_promedio": {
+        "temp": 6.0,
+        "humidity": 94.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla eléctrica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 148,
+      "timeframe": "01:00-02:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "Usuarios en Sevilla se quejan de que la escalera eléctrica de bajada se detiene sin razón, luego arranca de golpe después de 2 minutos. El movimiento es brusco. Temperatura de 7°C con humedad del 92% y cielo claro. Paseo de la Reforma tiene tráfico nivel 2. Calidad del aire es moderada. Mantenimiento encuentra un capacitor dañado.",
+      "features_numericas_promedio": {
+        "temp": 7.0,
+        "humidity": 92.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 149,
+      "timeframe": "02:00-03:00"
+    },
+    "X_features": {
+      "station": "Isabel la Católica",
+      "resumen_para_roberta": "Usuarios en Isabel la Católica reportan que el tren no frena al llegar, pasa la estación y retrocede lentamente. Genera miedo. Temperatura de 8°C con humedad del 90% y lluvia ligera 0.3mm. Fray Servando tiene tráfico nivel 3. Calidad del aire es dañina por PM10. Operador reporta falla en el sistema de frenado automático.",
+      "features_numericas_promedio": {
+        "temp": 8.0,
+        "humidity": 90.0,
+        "precip_mm": 0.3,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 150,
+      "timeframe": "03:00-04:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Usuarios en Insurgentes se quejan de que el andén huele a pintura fresca pero no hay señalización de pintura húmeda. Las paredes están pegajosas. Temperatura de 9°C con humedad del 88% y niebla. Av. Insurgentes Sur tiene tráfico nivel 2. Calidad del aire es buena. Mantenimiento reporta pintura no curada por humedad alta.",
+      "features_numericas_promedio": {
+        "temp": 9.0,
+        "humidity": 88.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 2.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Condiciones ambientales"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 151,
+      "timeframe": "04:00-05:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "En Cuauhtémoc, usuarios reportan que el sistema de ventilación está soplando aire caliente en lugar de fresco, generando sofoco. Temperatura de 10°C externa pero 28°C en andén. Humedad del 86%. Av. Chapultepec tiene tráfico nivel 1. Calidad del aire es moderada. Técnicos invierten cables del sistema de climatización.",
+      "features_numericas_promedio": {
+        "temp": 10.0,
+        "humidity": 86.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 152,
+      "timeframe": "05:00-06:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Usuarios en Pino Suárez observan que el tren tiene una luz parpadeante en el techo que no para, causando molestia visual. Es una luz de emergencia. Temperatura de 11°C con humedad del 84% y cielo limpio. Eje 1 Sur tiene tráfico nivel 3. Calidad del aire es insalubre. Técnico reemplaza balastro defectuoso.",
+      "features_numericas_promedio": {
+        "temp": 11.0,
+        "humidity": 84.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 153,
+      "timeframe": "06:00-07:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "Usuarios en Balbuena reportan que el andén está bloqueado por personal de limpieza con máquinas industriales, pero no hay señalización clara. Genera confusión. Temperatura de 12°C con humedad del 82% y niebla leve. Av. del Taller tiene tráfico nivel 4. Calidad del aire es mala. Supervisión reporta error en coordinación de horarios de limpieza.",
+      "features_numericas_promedio": {
+        "temp": 12.0,
+        "humidity": 82.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 154,
+      "timeframe": "07:00-08:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "Usuarios en Zaragoza reportan que el tren tiene una ventanilla con una burbuja de aire atrapada entre cristales, que distorsiona la vista. Es un tren nuevo. Temperatura de 14°C con humedad del 80% y lluvia 0.5mm. Calzada Zaragoza tiene tráfico nivel 5. Calidad del aire es moderada. Fabricante revisa defecto de sellado.",
+      "features_numericas_promedio": {
+        "temp": 14.0,
+        "humidity": 80.0,
+        "precip_mm": 0.5,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Defecto de fabricación"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 155,
+      "timeframe": "08:00-09:00"
+    },
+    "X_features": {
+      "station": "Sevilla",
+      "resumen_para_roberta": "Usuarios en Sevilla se quejan de que el tren acelera y desacelera bruscamente sin razón, como si alguien pisara el acelerador a fondo y luego soltara. Temperatura de 16°C con humedad del 75% y sol. Paseo de la Reforma tiene tráfico nivel 4. Calidad del aire es dañina por ozono. Operador reporta falla en el control de aceleración.",
+      "features_numericas_promedio": {
+        "temp": 16.0,
+        "humidity": 75.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla electrónica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 156,
+      "timeframe": "09:00-10:00"
+    },
+    "X_features": {
+      "station": "Juanacatlán",
+      "resumen_para_roberta": "Usuarios en Juanacatlán reportan que el andén está tan saturado que la gente está parada en los peldaños de la escalera eléctrica, bloqueándola. Hay empujones. Temperatura de 18°C con humedad del 70% y cielo claro. Viaducto tiene tráfico nivel 5. Calidad del aire es insalubre. No hay eventos especiales, es hora pico normal.",
+      "features_numericas_promedio": {
+        "temp": 18.0,
+        "humidity": 70.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Sobrecarga operacional"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 157,
+      "timeframe": "10:00-11:00"
+    },
+    "X_features": {
+      "station": "Salto del Agua",
+      "resumen_para_roberta": "Usuarios en Salto del Agua observan que el tren tiene una puerta que no se abre automáticamente, el operador tiene que abrirla manualmente con llave en cada estación. Demora el servicio. Temperatura de 20°C con humedad del 65% y tormenta lejana. Eje 1 Norte tiene tráfico nivel 3. Calidad del aire es moderada. Técnico reporta motor de puerta quemado.",
+      "features_numericas_promedio": {
+        "temp": 20.0,
+        "humidity": 65.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 158,
+      "timeframe": "11:00-12:00"
+    },
+    "X_features": {
+      "station": "Gómez Farías",
+      "resumen_para_roberta": "Usuarios en Gómez Farías se quejan de que la megafonía del andén anuncia estaciones en inglés sin razón aparente. Nadie entiende bien. Temperatura de 22°C con humedad del 60% y sol. Eje 4 Sur tiene tráfico nivel 4. Calidad del aire es dañina. Técnico reporta error de idioma en el sistema de voz, restaura a español.",
+      "features_numericas_promedio": {
+        "temp": 22.0,
+        "humidity": 60.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla de software/comunicaciones"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 159,
+      "timeframe": "12:00-13:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Usuarios en Pino Suárez reportan que el tren hace un sonido de 'aspiradora' muy fuerte cuando acelera, como si hubiera una fuga de aire. Temperatura de 24°C con humedad del 55% y cielo parcialmente nublado. Eje 1 Sur tiene tráfico nivel 5. Calidad del aire es moderada. Mecánicos encuentran compresor de aire con fuga en el tren.",
+      "features_numericas_promedio": {
+        "temp": 24.0,
+        "humidity": 55.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 160,
+      "timeframe": "13:00-14:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Usuarios en Merced observan que el andén está bloqueado por cajas de herramientas sin etiquetas, con personal que no da explicaciones. Genera caos. Temperatura de 25°C con humedad del 52% y tormenta eléctrica 5mm. Congreso de la Unión tiene tráfico nivel 4. Calidad del aire es muy mala. Supervisión reporta falla en logística de mantenimiento.",
+      "features_numericas_promedio": {
+        "temp": 25.0,
+        "humidity": 52.0,
+        "precip_mm": 5.0,
+        "traffic_jam_level": 4.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Error de mantenimiento"
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 161,
+      "timeframe": "14:00-15:00"
+    },
+    "X_features": {
+      "station": "Candelaria",
+      "resumen_para_roberta": "Usuarios en Candelaria reportan que el tren no tiene aire acondicionado y las ventanas no se pueden abrir. El calor es sofocante, hay personas descompensadas. Temperatura de 28°C con humedad del 48% y sol intenso. Eje 2 Oriente tiene tráfico nivel 5. Calidad del aire es dañina. Operador reporta falla en el compresor del tren.",
+      "features_numericas_promedio": {
+        "temp": 28.0,
+        "humidity": 48.0,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 5.0
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "target_falla": "Falla mecánica"
+    }
+  }
+]

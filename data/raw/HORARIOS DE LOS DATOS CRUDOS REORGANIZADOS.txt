@@ -1,0 +1,177 @@
+RESUMEN DE DISTRIBUCIÓN:
+	•	MADRUGADA (12-6 AM): 340 registros (12.7%)
+	•	PICO MATUTINO (6-10 AM): 760 registros (28.3%)
+	•	VALLE (10 AM-4 PM): 540 registros (20.1%)
+	•	PICO VESPERTINO (4-10 PM): 850 registros (31.7%)
+	•	CIERRE (10 PM-12 AM): 191 registros (7.1%)
+
+TOTAL: 2,681 registros (se redondeó a 3,000 en el dataset original)
+
+==========================================================
+
+MADRUGADA (12:00 AM - 6:00 AM) - 340 registros
+
+00:00 AM - 01:00 AM (Registros 1-50)
+	•	Cierre de operaciones
+	•	Últimos trenes
+	•	Usuarios de eventos nocturnos
+
+01:00 AM - 02:00 AM (Registros 51-90)
+	•	Mantenimiento nocturno inicia
+	•	Ingreso de maquinaria pesada
+	•	Cortes de corriente programados
+
+02:00 AM - 03:00 AM (Registros 91-120)
+	•	Mantenimiento pesado
+	•	Inspecciones de vías
+	•	Limpieza profunda
+
+03:00 AM - 04:00 AM (Registros 121-150)
+	•	Continuación de mantenimiento
+	•	Temperatura mínima del día
+	•	Seguridad perimetral
+
+04:00 AM - 05:00 AM (Registros 151-190)
+	•	Finalización de mantenimiento
+	•	Pruebas de sistemas
+	•	Energización de líneas
+
+05:00 AM - 06:00 AM (Registros 191-340)
+	•	Pre-apertura
+	•	Primeros trenes de prueba
+	•	Preparación de estaciones
+
+==========================================================
+
+PICO MATUTINO (6:00 AM - 10:00 AM) - 760 registros
+
+06:00 AM - 07:00 AM (Registros 341-480)
+	•	Apertura de servicio
+	•	Primera afluencia
+	•	Trabajadores madrugadores
+	•	Temperatura en ascenso
+
+07:00 AM - 08:00 AM (Registros 481-690)
+	•	PICO MÁXIMO MATUTINO
+	•	Saturación extrema
+	•	Dosificación de usuarios
+	•	Fallas de puertas por sobrecupo
+
+08:00 AM - 09:00 AM (Registros 691-900)
+	•	Continuación de hora pico
+	•	Máxima presión operativa
+	•	Palancas de emergencia
+	•	Retrasos acumulados
+
+09:00 AM - 10:00 AM (Registros 901-1100)
+	•	Transición a valle
+	•	Afluencia disminuye gradualmente
+	•	Fallas por estrés de hora pico
+
+==========================================================
+
+VALLE (10:00 AM - 4:00 PM) - 540 registros
+
+10:00 AM - 11:00 AM (Registros 1101-1190)
+	•	Valle matutino
+	•	Mantenimientos menores
+	•	Vendedores ambulantes
+
+11:00 AM - 12:00 PM (Registros 1191-1280)
+	•	Media mañana
+	•	Temperatura alta
+	•	Actividad comercial
+
+12:00 PM - 01:00 PM (Registros 1281-1370)
+	•	Hora de comida inicia
+	•	Aumento moderado de afluencia
+	•	Calor máximo del día
+
+01:00 PM - 02:00 PM (Registros 1371-1460)
+	•	Pico de temperatura
+	•	Fallas de aire acondicionado
+	•	Radiación UV alta
+
+02:00 PM - 03:00 PM (Registros 1461-1550)
+	•	Post-comida
+	•	Salida de escuelas
+	•	Inicio de lluvias (temporada)
+
+03:00 PM - 04:00 PM (Registros 1551-1640)
+	•	Tarde temprana
+	•	Clima cambiante
+	•	Fallas en escaleras mecánicas
+
+==========================================================
+
+PICO VESPERTINO (4:00 PM - 10:00 PM) - 850 registros
+
+04:00 PM - 05:00 PM (Registros 1641-1750)
+	•	Inicio de hora pico
+	•	Salida de oficinas de gobierno
+	•	Lluvias intensas (temporada)
+
+05:00 PM - 06:00 PM (Registros 1751-1870)
+	•	Incremento de afluencia
+	•	Tormentas eléctricas
+	•	Marcha de seguridad
+
+06:00 PM - 07:00 PM (Registros 1871-2000)
+	•	PICO MÁXIMO VESPERTINO
+	•	Saturación extrema
+	•	Lluvia + tráfico colapsado
+	•	Mayor estrés operativo del día
+
+07:00 PM - 08:00 PM (Registros 2001-2210)
+	•	Continuación de pico máximo
+	•	Cansancio acumulado de usuarios
+	•	Retrasos por lluvia
+	•	Saturación en transbordos
+
+08:00 PM - 09:00 PM (Registros 2211-2370)
+	•	Disminución gradual
+	•	Persisten retrasos
+	•	Reportes de seguridad aumentan
+
+09:00 PM - 10:00 PM (Registros 2371-2490)
+	•	Noche temprana
+	•	Afluencia baja
+	•	Iluminación deficiente
+
+==========================================================
+
+CIERRE (10:00 PM - 12:00 AM) - 191 registros
+
+10:00 PM - 11:00 PM (Registros 2491-2590)
+	•	Preparativos para cierre
+	•	Ansiedad por último tren
+	•	Usuarios en estado de ebriedad
+
+11:00 PM - 12:00 AM (Registros 2591-2681)
+	•	Últimos trenes
+	•	Cierre de taquillas
+	•	Inicio de logística nocturna
+
+==========================================================
+
+NOTAS OPERATIVAS:
+
+HORAS DE MÁXIMO ESTRÉS (>200 registros/hora):
+	•	07:00-08:00 AM (210 registros) - Entrada a trabajos/escuelas
+	•	08:00-09:00 AM (210 registros) - Continuación pico matutino
+	•	06:00-07:00 PM (130 registros) - Salida + lluvia
+	•	07:00-08:00 PM (210 registros) - Pico vespertino máximo
+
+HORAS DE ESTRÉS MODERADO (90-140 registros/hora):
+	•	06:00-07:00 AM (140 registros) - Apertura
+	•	09:00-10:00 AM (100 registros) - Transición
+	•	04:00-05:00 PM (110 registros) - Pre-pico vespertino
+	•	05:00-06:00 PM (120 registros) - Inicio pico vespertino
+	•	08:00-09:00 PM (160 registros) - Post-pico
+
+HORAS VALLE (<90 registros/hora):
+	•	10:00 AM-04:00 PM (90 registros promedio/hora)
+	•	09:00-10:00 PM (120 registros)
+	•	10:00 PM-06:00 AM (40-100 registros/hora)
+
+==========================================================

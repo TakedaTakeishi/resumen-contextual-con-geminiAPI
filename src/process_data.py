@@ -12,12 +12,13 @@ load_dotenv()
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RAW_DATA_PATH = os.path.join(BASE_DIR, 'data', 'raw', 'DATOS_CRUDOS_L1_COMPLETO.json')
-REPORTS_PATH = os.path.join(BASE_DIR, 'data', 'raw', 'INFORMES_SIEMONS_DATOS_CRUDOS_L1_COMPLETOS.json')
+RAW_DATA_PATH = os.path.join(BASE_DIR, 'data', 'raw', 'DATOS_CRUDOS_L1_COMPLETO_REORGANIZADOS.json')
+REPORTS_PATH = os.path.join(BASE_DIR, 'data', 'raw', 'INFORMES_SIEMONS_DATOS_CRUDOS_L1_COMPLETOS_REORGANIZADOS_REAL.json')
 OUTPUT_PATH = os.path.join(BASE_DIR, 'data', 'processed', 'features.json')
 
 # Configuration
-BATCH_SIZE = 200
+# BATCH_SIZE is no longer fixed, determined by reports
+INCLUDE_AUX_INFO = False
 
 # Set API Key
 api_key = os.getenv("GEMINI_API_KEY")
@@ -27,12 +28,27 @@ if not api_key:
 genai.configure(api_key=api_key)
 
 def load_json(path):
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"File not found: {path}")
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def save_json(data, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+
+def parse_batch_range(range_str):
+    """
+    Parses a string like "1-200" or "Registros 1-200" into start and end indices (0-based).
+    """
+    # Extract numbers
+    nums = re.findall(r'\d+', range_str)
+    if len(nums) >= 2:
+        start = int(nums[0]) - 1 # Convert to 0-based index
+        end = int(nums[1])
+        return start, end
+    return None, None
 
 def extract_numerical_features(batch_data, station_name):
     """
@@ -102,60 +118,81 @@ def get_gemini_extraction(batch_data):
     {json.dumps(batch_data, ensure_ascii=False)}
     """
     
-    try:
-        response = model.generate_content(prompt)
-        text = response.text.strip()
-        
-        # Robust JSON extraction: find the first '[' and last ']'
-        start_idx = text.find('[')
-        end_idx = text.rfind(']')
-        
-        if start_idx != -1 and end_idx != -1:
-            json_str = text[start_idx:end_idx+1]
-            return json.loads(json_str)
-        else:
-            # If no array found, maybe it returned a single object?
-            if text.startswith('{') and text.endswith('}'):
-                 return [json.loads(text)]
+    retries = 3
+    for attempt in range(retries):
+        try:
+            response = model.generate_content(prompt)
+            text = response.text.strip()
             
-            print(f"Warning: No JSON found in response. Start: {text[:50]}...")
-            return []
+            # Robust JSON extraction: find the first '[' and last ']'
+            start_idx = text.find('[')
+            end_idx = text.rfind(']')
             
-    except Exception as e:
-        print(f"Error calling Gemini: {e}")
-        return []
+            if start_idx != -1 and end_idx != -1:
+                json_str = text[start_idx:end_idx+1]
+                return json.loads(json_str)
+            else:
+                # If no array found, maybe it returned a single object?
+                if text.startswith('{') and text.endswith('}'):
+                     return [json.loads(text)]
+                
+                print(f"Warning: No JSON found in response (Attempt {attempt+1}/{retries}). Start: {text[:50]}...")
+                
+        except Exception as e:
+            print(f"Error calling Gemini (Attempt {attempt+1}/{retries}): {e}")
+            time.sleep(2) # Wait before retry
+            
+    return []
 
 def process_batches():
+    print(f"Loading raw data from: {RAW_DATA_PATH}")
     raw_data = load_json(RAW_DATA_PATH)
+    print(f"Loading reports from: {REPORTS_PATH}")
     reports_data = load_json(REPORTS_PATH)
     
-    reports_map = {r['batch_id']: r for r in reports_data['reports']}
-    
+    reports_list = reports_data.get('reports', [])
+    if not reports_list:
+        print("No reports found in the reports file.")
+        return
+
     final_output = []
     
     total_records = len(raw_data)
-    num_batches = (total_records + BATCH_SIZE - 1) // BATCH_SIZE
-    
-    print(f"Processing {total_records} records in {num_batches} batches using Gemini API...")
+    print(f"Total raw records: {total_records}")
+    print(f"Processing {len(reports_list)} batches defined in reports...")
 
-    for i in range(num_batches):
-        batch_id = i + 1
-        start_idx = i * BATCH_SIZE
-        end_idx = min((i + 1) * BATCH_SIZE, total_records)
+    for i, report in enumerate(reports_list):
+        batch_id = report.get('batch_id')
+        batch_range_str = report.get('batch_records')
         
+        if not batch_range_str:
+            print(f"Skipping batch {batch_id}: No batch_records defined.")
+            continue
+            
+        start_idx, end_idx = parse_batch_range(batch_range_str)
+        
+        if start_idx is None or end_idx is None:
+            print(f"Skipping batch {batch_id}: Could not parse range '{batch_range_str}'.")
+            continue
+            
+        # Ensure indices are within bounds
+        start_idx = max(0, start_idx)
+        end_idx = min(total_records, end_idx)
+        
+        if start_idx >= end_idx:
+            print(f"Skipping batch {batch_id}: Invalid range {start_idx}-{end_idx}.")
+            continue
+
         batch_data = raw_data[start_idx:end_idx]
-        
-        print(f"Processing Batch {batch_id}...")
+        print(f"Processing Batch {batch_id} (Records {start_idx+1}-{end_idx}, Count: {len(batch_data)})...")
         
         # 1. Gemini Extraction
         extracted_stations = get_gemini_extraction(batch_data)
         
         # Sleep briefly to avoid hitting rate limits too hard
-        time.sleep(1)
+        time.sleep(2)
         
-        # Get report for this batch to find the "Ground Truth" station if any
-        report = reports_map.get(batch_id)
-        timeframe = report.get('batch_timeframe', 'Unknown') if report else 'Unknown'
+        timeframe = report.get('batch_timeframe', 'Unknown')
         
         # If the report mentions a specific station where a failure occurred, 
         # we MUST ensure it's in our extracted list (even if our simple mock missed it, 
@@ -165,6 +202,9 @@ def process_batches():
         # Also, if the report says "falla_detectada": true, we want to make sure we align 
         # the Y_labels correctly for the station where it happened.
         
+        if not extracted_stations:
+             print(f"  Warning: No stations extracted for batch {batch_id}.")
+
         for station_info in extracted_stations:
             station_name = station_info['station_id']
             
@@ -174,7 +214,11 @@ def process_batches():
             # 3. Construct Y_labels
             y_labels = {
                 "falla_detectada": False,
-                "tipo_falla": None,
+                "target_falla": None
+            }
+            
+            # Auxiliary info for RPN calculation and metadata, kept outside Y_labels as requested
+            aux_info = {
                 "modo_falla_codigo": None,
                 "impacto_operativo": "Normal",
                 "retraso_minutos": 0,
@@ -182,25 +226,27 @@ def process_batches():
                 "severidad": 0
             }
             
-            if report and report.get('falla_detectada'):
+            if report.get('falla_detectada'):
                 # Check if this station matches the one in the report
                 report_location = report.get('location_segment')
-                if report_location and report_location.lower() in station_name.lower():
+                # Robust matching: check if one string contains the other (case insensitive)
+                if report_location and (report_location.lower() in station_name.lower() or station_name.lower() in report_location.lower()):
                     y_labels["falla_detectada"] = True
-                    y_labels["tipo_falla"] = report.get('root_cause_category')
-                    y_labels["modo_falla_codigo"] = report.get('failure_mode_code')
-                    y_labels["impacto_operativo"] = report.get('operational_impact')
-                    y_labels["retraso_minutos"] = report.get('delay_minutes')
-                    y_labels["descripcion_tecnica"] = report.get('incident_description')
+                    y_labels["target_falla"] = report.get('root_cause_category')
+                    
+                    aux_info["modo_falla_codigo"] = report.get('failure_mode_code')
+                    aux_info["impacto_operativo"] = report.get('operational_impact')
+                    aux_info["retraso_minutos"] = report.get('delay_minutes')
+                    aux_info["descripcion_tecnica"] = report.get('incident_description')
                     
                     # Map severity
                     impact = report.get('operational_impact', '')
                     if 'Suspensión' in impact:
-                        y_labels["severidad"] = 2
+                        aux_info["severidad"] = 2
                     elif 'Retraso' in impact:
-                        y_labels["severidad"] = 1
+                        aux_info["severidad"] = 1
                     else:
-                        y_labels["severidad"] = 0
+                        aux_info["severidad"] = 0
 
             # 4. Assemble Final Object
             entry = {
@@ -215,6 +261,9 @@ def process_batches():
                 },
                 "Y_labels": y_labels
             }
+
+            if INCLUDE_AUX_INFO:
+                entry["auxiliary_info"] = aux_info
             
             final_output.append(entry)
 
