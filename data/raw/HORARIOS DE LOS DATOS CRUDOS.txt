@@ -1,0 +1,93 @@
+
+BATCH 1 (Registros 1 - 60)
+Horario: 07:00 PM - 09:00 PM (Hora Pico Vespertina)
+
+BATCH 2 (Registros 61 - 160)
+Horario: 09:00 PM - 11:00 PM (Noche y Regreso de Eventos)
+
+BATCH 3 (Registros 161 - 260)
+Horario: 11:00 PM - 01:00 AM (Cierre de Servicio)
+
+BATCH 4 (Registros 261 - 360)
+Horario: 01:00 AM - 03:00 AM (Madrugada y Mantenimiento Profundo)
+
+BATCH 5 (Registros 361 - 460)
+Horario: 03:00 AM - 05:00 AM (Mantenimiento y Pre-Apertura)
+
+BATCH 6 (Registros 461 - 560)
+Horario: 05:00 AM - 07:00 AM (Apertura y Amanecer)
+
+Aquí tienes el BATCH 7 (Registros 561 - 660).
+Este bloque se centra en la Hora Pico Matutina (7:00 AM - 9:00 AM), con reportes de saturación extrema, dosificación de usuarios (cierre de rejas) y fallas de puertas provocadas por el exceso de pasajeros.
+
+Aquí tienes el BATCH 8 (Registros 661 - 760).
+Este bloque se enfoca en el Horario de Mediodía (10:00 AM - 1:00 PM). He introducido variables críticas para este horario: golpes de calor/desmayos (emergencias médicas que detienen el servicio), altos índices de radiación UV y niveles de Ozono subiendo.
+
+Aquí tienes el BATCH 9 (Registros 761 - 860).
+Este bloque cubre la transición a la Tarde (2:00 PM - 5:00 PM), un momento crítico en CDMX donde suele comenzar la lluvia, activando la "marcha de seguridad" (trenes lentos) y provocando reportes de filtraciones y encharcamientos.
+
+Aquí tienes el BATCH 10 (Registros 861 - 960).
+Este bloque cubre la Hora Pico Vespertina (6:00 PM - 9:00 PM). Este es el momento más crítico del día: combinación de lluvia, cansancio de los usuarios, saturación máxima en transbordos y tráfico vehicular colapsado que afecta al transporte de superficie.
+
+Aquí tienes el BATCH 11 (Registros 961 - 1060).
+Este bloque cubre el Cierre de Servicio y Noche (9:00 PM - 12:00 AM). Aquí encontrarás reportes sobre los últimos trenes, gente regresando de conciertos/fiestas, presencia de usuarios en estado de ebriedad y el inicio de las maniobras de mantenimiento nocturno.
+
+Aquí tienes el BATCH 12 (Registros 1061 - 1160).
+Este bloque cubre la Madrugada y Mantenimiento (01:00 AM - 04:30 AM). Es una fase crítica para tu sistema RAMS, ya que aquí se generan los datos de mantenimiento preventivo/correctivo, inspecciones de vías, ingreso de maquinaria pesada (dresinas) y eventos de seguridad perimetral (intrusiones) mientras el servicio está cerrado al público.
+
+Aqui tienes el BATCH 13 (Registros 1161 - 1260).
+Este bloque cubre el Inicio de Servicio y Primera Afluencia (05:00 AM - 07:00 AM). Es el momento donde el sistema pasa de "reposo" a "estrés operativo". Aquí verás reportes sobre retrasos en la salida de trenes, fallas por "falso contacto" en puertas debido al frío, y la acumulación rápida de usuarios en las terminales.
+
+Aquí tienes el BATCH 14 (Registros 1261 - 1360).
+Este bloque corresponde al Pico Máximo de la Mañana (07:00 AM - 09:00 AM). Es el escenario de mayor estrés para el sistema RAMS: saturación de andenes, activación frecuente de palancas de emergencia por desmayos o conflictos, y fallas de puertas por obstrucción forzada.
+
+Aquí tienes el BATCH 15 (Registros 1361 - 1460).
+Este bloque cubre la Transición a Horario Valle (09:00 AM - 11:00 AM). En esta franja, la afluencia baja ligeramente, pero surgen las fallas por estrés de la hora pico (puertas desajustadas, basura en vías) y comienzan los bloqueos viales/marchas que afectan la llegada a las estaciones.
+
+Aquí tienes el BATCH 16 (Registros 1461 - 1560).
+Este bloque abarca el Mediodía y Hora de Comida (11:00 AM - 02:00 PM). Es un periodo caracterizado por el aumento de temperatura (afectando sistemas de refrigeración y rieles en tramos elevados), altos índices de radiación UV y actividad comercial intensa dentro y fuera de las estaciones.
+
+Aquí tienes el BATCH 17 (Registros 1561 - 1660).
+Este bloque cubre la Tarde Temprana y Salida de Escuelas (2:00 PM - 4:00 PM). Es un horario de transición donde se mezclan estudiantes del turno vespertino, trabajadores regresando de comer y el inicio de las lluvias típicas de la tarde en CDMX, lo que empieza a complicar la operación (marcha de seguridad).
+
+Aquí tienes el BATCH 18 (Registros 1661 - 1760).
+Este bloque cubre el inicio de la Hora Pico Vespertina y Tormentas (4:00 PM - 6:00 PM). Es el momento donde la lluvia suele intensificarse en CDMX, provocando suspensiones en el servicio de Cablebús (por tormenta eléctrica/viento), inundaciones en bajopuentes que afectan el tráfico y la activación generalizada de la marcha de seguridad en el Metro.
+
+Aquí tienes el BATCH 19 (Registros 1761 - 1860).
+Este bloque cubre el Pico Máximo Vespertino (6:00 PM - 8:00 PM). Es el momento de mayor estrés operativo del día: la combinación de salida masiva de oficinas + lluvia/pavimento mojado + cansancio acumulado. Los reportes se centran en la saturación extrema (no poder entrar al vagón), la "marcha de seguridad" (avance lento por lluvia) y conatos de violencia por el hacinamiento
+
+Aquí tienes el BATCH 20 (Registros 1861 - 1960).
+Este bloque cubre la Noche Temprana (8:00 PM - 10:00 PM). La afluencia comienza a bajar lentamente, pero persisten los retrasos acumulados por la lluvia de la tarde. Es un horario común para reportes de seguridad (asaltos/acoso en vagones semivacíos o pasillos largos) y fallas de iluminación.
+
+Aquí tienes el BATCH 21 (Registros 1961 - 2060).
+Este bloque cubre el Cierre de Operaciones y Noche Tardia (10:00 PM - 12:00 AM). El sistema se prepara para el corte de corriente. Aumentan los reportes de seguridad (personas en estado de ebriedad, acoso), la ansiedad de los usuarios por alcanzar el último tren y el inicio de la logística de mantenimiento nocturno.
+
+Aquí tienes el BATCH 22 (Registros 2061 - 2160).
+Este bloque cubre la Madrugada Profunda y Mantenimiento Pesado (00:00 AM - 02:00 AM). El servicio de trenes está cerrado. Es el momento clave para los sistemas RAMS: ingreso de maquinaria pesada (dresinas), cortes de corriente (libranzas) para trabajar en vías, y limpieza profunda. En redes sociales, predomina el insomnio, la fiesta y reportes de trabajadores nocturnos.
+
+Aquí tienes el BATCH 23 (Registros 2161 - 2260).
+Este bloque cubre la Madrugada Profunda y Pre-Apertura (02:30 AM - 04:30 AM). Es la fase final de la ventana de mantenimiento nocturno. Los registros técnicos dominan (pruebas de trenes en vacío, retiro de maquinaria de vías, energización de líneas), mientras que en redes sociales predominan los usuarios "after-party" y los trabajadores de turnos ultra-tempranos.
+
+Aquí tienes el BATCH 24 (Registros 2261 - 2360).
+Este bloque cubre el Inicio de la Hora Pico Matutina (05:00 AM - 07:00 AM). El sistema comienza a saturarse rápidamente. Aparecen los primeros reportes de retrasos en líneas afluentes (B, A, 3), problemas de puertas por forcejeo de usuarios desesperados y la transición de temperaturas frías a templadas.
+
+Aquí tienes el BATCH 25 (Registros 2361 - 2460).
+Este bloque cubre el Horario Valle Matutino (09:00 AM - 11:00 AM). La afluencia baja considerablemente, lo que permite a los equipos de mantenimiento realizar intervenciones menores (escaleras, luminarias). Sin embargo, es el horario donde proliferan los vendedores ambulantes (vagoneros) y aumentan los reportes de suciedad en estaciones.
+
+Aquí tienes el BATCH 26 (Registros 2461 - 2560).
+Este bloque cubre la Hora de la Comida y Calor Máximo (01:00 PM - 03:00 PM). Es el momento del día con mayor radiación solar y temperatura. Los reportes se centran en fallas de aire acondicionado, golpe de calor en usuarios, "mal del puerco" (somnolencia) y tráfico local intenso en zonas de oficinas por la hora de comida.
+
+Aquí tienes el BATCH 27 (Registros 2561 - 2660).
+Este bloque cubre la Media Tarde (3:00 PM - 5:00 PM). Es el preludio a la hora pico vespertina. Comienza la salida de oficinas de gobierno y escuelas de turno matutino. El clima suele cambiar de soleado a nublado/ventoso, y aumentan los reportes de fallas en escaleras mecánicas por el uso continuo durante el día.
+
+Aquí tienes el BATCH 28 (Registros 2661 - 2760).
+Este bloque cubre el Inicio de la Hora Pico Vespertina (5:00 PM - 7:00 PM). Es el momento en que convergen la salida de oficinas y el inicio de lluvias fuertes. Los reportes se enfocan en retrasos por lluvia, saturación en zonas de oficinas (Polanco, Reforma) y fallas en sistemas de peaje por la alta demanda.
+
+Aquí tienes el BATCH 29 (Registros 2761 - 2860).
+Este bloque cubre el Pico Máximo Vespertino y Regreso a Casa (7:00 PM - 9:00 PM). Es el momento de mayor saturación en sentido contrario a la mañana (hacia zonas residenciales). Persisten los efectos de la lluvia (marcha lenta), el cansancio acumulado genera tensión entre usuarios y aumentan los reportes de vendedores ambulantes y fallas en puertas por saturación.
+
+Aquí tienes el BATCH 30 (Registros 2861 - 2960).
+Este bloque cubre la Noche y Cierre de Jornada (9:00 PM - 11:00 PM). La afluencia baja drásticamente, pero aumenta la percepción de inseguridad en estaciones vacías. Comienzan los preparativos para el cierre, reportes de usuarios en estado de ebriedad y la logística de "último tren".
+
+Aquí tienes el BATCH 31 (FINAL) (Registros 2961 - 3000).
+Este es el último bloque para completar los 3000 registros. Cubre los minutos finales de operación (11:00 PM - 12:00 AM) y el cierre definitivo del sistema, donde la operación pasa de pasajeros a mantenimiento nocturno.

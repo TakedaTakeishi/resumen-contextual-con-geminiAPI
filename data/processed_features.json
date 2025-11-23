@@ -1,0 +1,1052 @@
+[
+  {
+    "batch_meta": {
+      "batch_id": 1,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Usuarios reportan retrasos y marcha lenta. Presencia de lluvia en la zona. Estación con alta saturación de usuarios. Tráfico denso en superficie.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 83.3,
+        "precip_mm": 0.5,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "tipo_falla": "Falla electrónica",
+      "modo_falla_codigo": "ENRG-001",
+      "impacto_operativo": "Retraso menor (<5 min)",
+      "retraso_minutos": 11.3,
+      "descripcion_tecnica": "Pérdida de tracción en tren. Subestación presenta valores fuera de rango operativo. Sistema SCADA registra alarma crítica. Reportado por operador tras activación automática de protocolo de seguridad.",
+      "severidad": 1
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 1,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "Tráfico denso en superficie.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 83.3,
+        "precip_mm": 0.5,
+        "traffic_jam_level": 2.9
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 1,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 83.3,
+        "precip_mm": 0.5,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 1,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 83.3,
+        "precip_mm": 0.5,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 1,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "San Lázaro",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 15.0,
+        "humidity": 83.3,
+        "precip_mm": 0.5,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 2,
+      "timeframe": "23:00-03:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 8.4,
+        "humidity": 90.1,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 2,
+      "timeframe": "23:00-03:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 8.4,
+        "humidity": 90.1,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "tipo_falla": "Falla electrónica",
+      "modo_falla_codigo": "TRAC-002",
+      "impacto_operativo": "Suspensión parcial",
+      "retraso_minutos": 49.3,
+      "descripcion_tecnica": "Pérdida de tracción en tren. Pantógrafo presenta valores fuera de rango operativo. Sistema SCADA registra alarma crítica. Reportado por operador tras activación automática de protocolo de seguridad.",
+      "severidad": 2
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 3,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 12.9,
+        "humidity": 73.5,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 3,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Chapultepec",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 12.9,
+        "humidity": 73.5,
+        "precip_mm": 0.1,
+        "traffic_jam_level": 2.8
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 3,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios reportan retrasos y marcha lenta. Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 12.9,
+        "humidity": 73.5,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "tipo_falla": "Obstrucción externa",
+      "modo_falla_codigo": "ENRG-002",
+      "impacto_operativo": "Suspensión parcial",
+      "retraso_minutos": 50.5,
+      "descripcion_tecnica": "Pérdida de tracción en tren. Motor de tracción presenta valores fuera de rango operativo. Sistema SCADA registra alarma crítica. Reportado por operador tras activación automática de protocolo de seguridad.",
+      "severidad": 2
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 3,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 12.9,
+        "humidity": 73.5,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 3,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 12.9,
+        "humidity": 73.5,
+        "precip_mm": 0.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 4,
+      "timeframe": "07:00-11:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios reportan retrasos y marcha lenta. Presencia de lluvia en la zona. Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 21.3,
+        "humidity": 60.2,
+        "precip_mm": 3.3,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "tipo_falla": "Desgaste normal",
+      "modo_falla_codigo": "ENRG-002",
+      "impacto_operativo": "Suspensión parcial",
+      "retraso_minutos": 53.4,
+      "descripcion_tecnica": "Pérdida de tracción en tren. Motor de tracción presenta valores fuera de rango operativo. Sistema SCADA registra alarma crítica. Reportado por operador tras activación automática de protocolo de seguridad.",
+      "severidad": 2
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 4,
+      "timeframe": "07:00-11:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 21.3,
+        "humidity": 60.2,
+        "precip_mm": 3.3,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 5,
+      "timeframe": "11:00-15:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 12.4,
+        "humidity": 87.3,
+        "precip_mm": 1.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 5,
+      "timeframe": "11:00-15:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 12.4,
+        "humidity": 87.3,
+        "precip_mm": 1.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 5,
+      "timeframe": "11:00-15:00"
+    },
+    "X_features": {
+      "station": "Cuauhtémoc",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 12.4,
+        "humidity": 87.3,
+        "precip_mm": 1.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "15:00-19:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 11.2,
+        "humidity": 71.1,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 6,
+      "timeframe": "15:00-19:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 11.2,
+        "humidity": 71.1,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 7,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios reportan retrasos y marcha lenta. Reportes de humo en andenes. Tráfico denso en superficie.",
+      "features_numericas_promedio": {
+        "temp": 24.6,
+        "humidity": 29.1,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 7,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 24.6,
+        "humidity": 29.1,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 7,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Balderas",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 24.6,
+        "humidity": 29.1,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 7,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 24.6,
+        "humidity": 29.1,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "23:00-03:00"
+    },
+    "X_features": {
+      "station": "Tacubaya",
+      "resumen_para_roberta": "Usuarios reportan retrasos y marcha lenta. Presencia de lluvia en la zona. Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 19.8,
+        "humidity": 77.3,
+        "precip_mm": 5.4,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "23:00-03:00"
+    },
+    "X_features": {
+      "station": "Boulevard Puerto Aéreo",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 19.8,
+        "humidity": 77.3,
+        "precip_mm": 5.4,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 8,
+      "timeframe": "23:00-03:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "Presencia de lluvia en la zona. Tráfico denso en superficie.",
+      "features_numericas_promedio": {
+        "temp": 19.8,
+        "humidity": 77.3,
+        "precip_mm": 5.4,
+        "traffic_jam_level": 4.5
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 9,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "Usuarios reportan retrasos y marcha lenta. Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 15.1,
+        "humidity": 86.2,
+        "precip_mm": 0.6,
+        "traffic_jam_level": 2.8
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 9,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 15.1,
+        "humidity": 86.2,
+        "precip_mm": 0.6,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 9,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Observatorio",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 15.1,
+        "humidity": 86.2,
+        "precip_mm": 0.6,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 9,
+      "timeframe": "03:00-07:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 15.1,
+        "humidity": 86.2,
+        "precip_mm": 0.6,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "07:00-11:00"
+    },
+    "X_features": {
+      "station": "Zaragoza",
+      "resumen_para_roberta": "Reportes de humo en andenes.",
+      "features_numericas_promedio": {
+        "temp": 8.2,
+        "humidity": 90.6,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 1.3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "tipo_falla": "Falla electrónica",
+      "modo_falla_codigo": "TRAC-002",
+      "impacto_operativo": "Suspensión parcial",
+      "retraso_minutos": 47.5,
+      "descripcion_tecnica": "Pérdida de tracción en tren. Catenaria presenta valores fuera de rango operativo. Sistema SCADA registra alarma crítica. Reportado por operador tras activación automática de protocolo de seguridad.",
+      "severidad": 2
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 10,
+      "timeframe": "07:00-11:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 8.2,
+        "humidity": 90.6,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 11,
+      "timeframe": "11:00-15:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Presencia de lluvia en la zona. Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 17.4,
+        "humidity": 49.7,
+        "precip_mm": 0.0,
+        "traffic_jam_level": 3
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "tipo_falla": "Condición ambiental",
+      "modo_falla_codigo": "MECH-001",
+      "impacto_operativo": "Retraso menor (<5 min)",
+      "retraso_minutos": 19.4,
+      "descripcion_tecnica": "Falla en Sensor de obstrucción. Imposibilidad de cierre completo detectado por sistema de seguridad interlocking. Pasajeros reportan obstrucción y imposibilidad de abordaje. Intervención requerida.",
+      "severidad": 1
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 11,
+      "timeframe": "11:00-15:00"
+    },
+    "X_features": {
+      "station": "Pino Suárez",
+      "resumen_para_roberta": "Presencia de lluvia en la zona.",
+      "features_numericas_promedio": {
+        "temp": 17.4,
+        "humidity": 49.7,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 11,
+      "timeframe": "11:00-15:00"
+    },
+    "X_features": {
+      "station": "Moctezuma",
+      "resumen_para_roberta": "Usuarios reportan retrasos y marcha lenta.",
+      "features_numericas_promedio": {
+        "temp": 17.4,
+        "humidity": 49.7,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 11,
+      "timeframe": "11:00-15:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 17.4,
+        "humidity": 49.7,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 12,
+      "timeframe": "15:00-19:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 24.4,
+        "humidity": 42.8,
+        "precip_mm": 1.1,
+        "traffic_jam_level": 3.6
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 12,
+      "timeframe": "15:00-19:00"
+    },
+    "X_features": {
+      "station": "Merced",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 24.4,
+        "humidity": 42.8,
+        "precip_mm": 1.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 12,
+      "timeframe": "15:00-19:00"
+    },
+    "X_features": {
+      "station": "Balbuena",
+      "resumen_para_roberta": "Operación con flujo constante, menciones incidentales.",
+      "features_numericas_promedio": {
+        "temp": 24.4,
+        "humidity": 42.8,
+        "precip_mm": 1.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 13,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Insurgentes",
+      "resumen_para_roberta": "Presencia de lluvia en la zona. Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 15.3,
+        "humidity": 89.7,
+        "precip_mm": 2.1,
+        "traffic_jam_level": 4.4
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": true,
+      "tipo_falla": "Obstrucción externa",
+      "modo_falla_codigo": "TRAC-002",
+      "impacto_operativo": "Suspensión parcial",
+      "retraso_minutos": 36.9,
+      "descripcion_tecnica": "Pérdida de tracción en tren. Subestación presenta valores fuera de rango operativo. Sistema SCADA registra alarma crítica. Reportado por operador tras activación automática de protocolo de seguridad.",
+      "severidad": 2
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 13,
+      "timeframe": "19:00-23:00"
+    },
+    "X_features": {
+      "station": "Boulevard Puerto Aéreo",
+      "resumen_para_roberta": "Reportes de humo en andenes. Estación con alta saturación de usuarios.",
+      "features_numericas_promedio": {
+        "temp": 15.3,
+        "humidity": 89.7,
+        "precip_mm": 2.1,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  },
+  {
+    "batch_meta": {
+      "batch_id": 14,
+      "timeframe": "23:00-03:00"
+    },
+    "X_features": {
+      "station": "Boulevard Puerto Aéreo",
+      "resumen_para_roberta": "Presencia de lluvia en la zona.",
+      "features_numericas_promedio": {
+        "temp": 12.2,
+        "humidity": 88.7,
+        "precip_mm": 0.0,
+        "traffic_jam_level": null
+      }
+    },
+    "Y_labels": {
+      "falla_detectada": false,
+      "tipo_falla": null,
+      "modo_falla_codigo": null,
+      "impacto_operativo": "Normal",
+      "retraso_minutos": 0,
+      "descripcion_tecnica": null,
+      "severidad": 0
+    }
+  }
+]

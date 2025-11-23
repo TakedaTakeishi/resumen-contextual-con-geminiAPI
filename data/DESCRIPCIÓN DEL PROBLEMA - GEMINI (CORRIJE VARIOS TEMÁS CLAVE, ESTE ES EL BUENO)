@@ -1,0 +1,74 @@
+PROMPT DE ARQUITECTURA TÉCNICA: SISTEMA PREDICTIVO RAMS-AI PARA SIEMENS (METRO CDMX L1)
+Rol de la IA: Arquitecto de Soluciones Enterprise, Especialista en Mantenimiento Predictivo (PdM) y NLP.
+
+1. RESUMEN DEL PROYECTO
+Diseñar una arquitectura de Inteligencia Artificial Híbrida para Siemens, operadora del mantenimiento de la Línea 1 del Metro CDMX. El sistema tiene como objetivo reducir tiempos de respuesta (MTTR) mediante la predicción anticipada de fallas, utilizando análisis de contexto social (Twitter/X) enriquecido con datos ambientales. El modelo utiliza un enfoque Human-in-the-loop para validación operativa y se recalibra automáticamente contrastando sus predicciones con los reportes oficiales alojados en sistemas FRACAS bajo normativa EN 50126 (RAMS).
+
+2. PROBLEMA Y RESTRICCIONES (HARD CONSTRAINTS)
+Latencia Operativa: El ciclo actual (Reporte C5 -> Desplazamiento -> Diagnóstico) consume ~60 min de los 120 min disponibles antes de penalizaciones críticas.
+
+Caja Negra: Sin integración con sistemas del C5 ni acceso a telemetría de trenes en tiempo real (SCADA).
+
+Necesidad: Pre-alertar a los ingenieros para que se desplacen a la zona de falla antes de la confirmación oficial, minimizando falsos positivos costosos.
+
+3. ARQUITECTURA DEL PIPELINE DE DATOS (4 ETAPAS REFORZADAS)
+FASE 1: Ingesta Inteligente (The Sensor)
+Fuente Principal: API Twitter/X (Nivel Enterprise para acceso al firehose en tiempo real).
+
+Corrección de Estrategia (Filtrado Híbrido): Dado que pocos usuarios activan el GPS, se sustituye el "geo-fencing" puro por una Búsqueda Semántica Localizada.
+
+Keywords: "Línea 1", "Metro", nombres de estaciones ("Pino Suárez", "Balderas"), "Humo", "Parado", "Lento".
+
+Disparador: Monitoreo continuo en ventanas de tiempo deslizantes (streaming).
+
+FASE 2: Estructuración y Enriquecimiento (The LLM Layer)
+Motor: Large Language Model (LLM) optimizado para inferencia rápida.
+
+Inputs Multi-Fuente:
+
+Social: Tweets crudos filtrados en Fase 1.
+
+Exógenos (NUEVO): Ingesta de APIs de Clima (OpenWeather: lluvia, temperatura) y Calendario (Días festivos, Horas pico, Eventos masivos).
+
+Proceso: El LLM actúa como normalizador de datos y geolocalizador contextual. Infiere la ubicación basada en el texto (ej: "El tren no sale de Observatorio" -> Ubicación: Observatorio) y correlaciona con el clima.
+
+Output: Un "Vector de Contexto Situacional" estructurado que contiene: [Ubicación inferida, Intensidad de quejas, Clima actual, Hora del día, Tipo de reporte visual].
+
+FASE 3: Predicción de Probabilidad (The Neural Network Layer)
+Motor: Red Neuronal Profunda (DNN).
+
+Input: El "Vector de Contexto Situacional" generado por el LLM.
+
+Objetivo: Mapeo no-lineal para cerrar la "brecha semántica" entre síntomas sociales y familias técnicas de fallas.
+
+Output (Predicción Ajustada):
+
+Ubicación: Estación o Tramo específico.
+
+Familia de Falla (Scope Realista): En lugar de adivinar el componente exacto, clasifica la Naturaleza del Incidente (ej. "Falla de Tracción/Energía", "Sistema de Puertas/Mecánico", "Señalización/Retraso Operativo", "Seguridad/Pasajero").
+
+Nivel de Confianza: % de probabilidad.
+
+Acción Sugerida: Alerta a Centro de Control para validación humana (Human-in-the-loop) antes del despacho físico.
+
+FASE 4: Validación RAMS y Auto-Ajuste (The Ground Truth)
+Esta fase es crítica para la mejora continua y el cumplimiento normativo.
+
+Fuente de Verdad: Sistemas FRACAS (Failure Reporting, Analysis, and Corrective Action System) de Siemens.
+
+Plataforma de Origen: Datos provenientes de IBM Maximo integrados con la suite Siemens Railigent X.
+
+Estándar de Datos: Los reportes siguen estrictamente la normativa europea EN 50126 (RAMS).
+
+Mecanismo de Feedback Loop:
+
+El sistema genera un ID de Predicción Social.
+
+Posterior al incidente, se ingesta el reporte RAMS oficial desde Maximo/Railigent X.
+
+Comparación: Se cruza la Predicción (ej. "Problema de Puertas") vs. el Reporte RAMS Real (ej. "Obstrucción mecánica en puerta 3").
+
+Re-Entrenamiento: La red ajusta sus pesos (Backpropagation) aprendiendo, por ejemplo, que "Lluvia + Tweets de retraso" suele correlacionar con "Fallas de Energía" y no con "Señalización".
+
+4. OBJETIVO FINAL
+Lograr una herramienta operativa que permita a Siemens posicionar recursos técnicos en sitio basándose en "síntomas sociales" y ambientales, validando la decisión con un humano y utilizando sus propios datos históricos RAMS para refinar la precisión del modelo día tras día, transformando el ruido de redes sociales en inteligencia de mantenimiento accionable.
